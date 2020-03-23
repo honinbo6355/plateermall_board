@@ -1,2 +1,2 @@
 # shoppingmall_board README
-![usecase-diagram](./Readme_img/shoppingmall_board_usecasediagram.png)
+![shoppingmall_board_usecasediagram](./Readme_img/shoppingmall_board_usecasediagram.png)
