@@ -1,1 +1,2 @@
-# 처음작성하는 README
+# shoppingmall_board README
+![usecase-diagram](./Readme_img/shoppingmall_board_usecasediagram)
