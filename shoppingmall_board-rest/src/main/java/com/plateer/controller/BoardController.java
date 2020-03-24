@@ -1,10 +1,11 @@
 package com.plateer.controller;
 
-import com.plateer.domain.dto.BoardDto;
+import com.plateer.domain.dto.AnswerDto;
+import com.plateer.domain.dto.QuestionDto;
 import org.springframework.web.bind.annotation.*;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @RestController
@@ -15,16 +16,33 @@ import java.util.List;
 @RequestMapping("/api/faq/")
 public class BoardController {
 
-    @GetMapping("list")
-    public List<BoardDto> getFaqList() {
-        List<BoardDto> list = new ArrayList<>();
-        list.add(new BoardDto(1,"123","123","123","123",true,true));
-        list.add(new BoardDto(2,"456","456","456","456",false,false));
+    @GetMapping("qeustion/list")
+    public List<QuestionDto> getQeustionList() {
+        List<QuestionDto> list = new ArrayList<>();
+        list.add(new QuestionDto(1,new Date(),"주문영역질문","123","나이키신발질문","왜이렇게큰가요",true,true));
+        list.add(new QuestionDto(2,new Date(),"배송영역질문","456","꽃무늬원피스질문","왜이렇게작은가요",false,false));
         return list;
     }
 
-    @GetMapping("detail")
-    public BoardDto getFaq() {
+    @GetMapping("question/detail/{postId}")
+    public QuestionDto getQuestion(@PathVariable int postId) {
+        List<QuestionDto> list = new ArrayList<>();
+        list.add(new QuestionDto(1,new Date(),"주문영역질문","123","나이키신발질문","왜이렇게큰가요",true,true));
+        list.add(new QuestionDto(2,new Date(),"배송영역질문","456","꽃무늬원피스질문","왜이렇게작은가요",false,false));
+
+        QuestionDto foundedBoard = null;
+
+        for(int i=0 ; i<list.size() ; i++) {
+            if(list.get(i).getPostId()==postId) {
+                foundedBoard = list.get(i);
+            }
+        }
+        return foundedBoard;
+    }
+
+    @GetMapping("answer/{postId}")
+    public AnswerDto getAnswer() {
+
 
 
         return null;

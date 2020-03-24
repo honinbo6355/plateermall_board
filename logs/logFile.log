@@ -401,3 +401,13 @@ Identify and stop the process that's listening on port 8081 or configure this ap
 971  [main] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
 3615 [main] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 3.145 seconds (JVM running for 4.641)
 3617 [main] ERROR com.plateer.BoardBootApplication - 부트 잘 ~ 돌아간다.
+1652 [main] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 14936 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+1656 [main] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+1657 [main] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+6330 [main] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 5.375 seconds (JVM running for 7.692)
+6331 [main] ERROR com.plateer.BoardBootApplication - 부트 잘 ~ 돌아간다.
+933  [main] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 10012 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+936  [main] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+936  [main] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+3403 [main] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 2.981 seconds (JVM running for 4.34)
+3408 [main] ERROR com.plateer.BoardBootApplication - 부트 잘 ~ 돌아간다.
