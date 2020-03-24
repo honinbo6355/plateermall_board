@@ -16,19 +16,19 @@ import java.util.List;
 @RequestMapping("/api/faq/")
 public class BoardController {
 
-    @GetMapping("qeustion/list")
-    public List<QuestionDto> getQeustionList() {
+    @GetMapping("question/list")
+    public List<QuestionDto> getQuestionList() {
         List<QuestionDto> list = new ArrayList<>();
-        list.add(new QuestionDto(1,new Date(),"주문영역질문","123","나이키신발질문","왜이렇게큰가요",true,true));
-        list.add(new QuestionDto(2,new Date(),"배송영역질문","456","꽃무늬원피스질문","왜이렇게작은가요",false,false));
+        list.add(new QuestionDto(1,true,null,"주문영역질문","123","나이키신발질문","왜이렇게큰가요",true,true));
+        list.add(new QuestionDto(2,false,null,"배송영역질문","456","꽃무늬원피스질문","왜이렇게작은가요",false,false));
         return list;
     }
 
     @GetMapping("question/detail/{postId}")
     public QuestionDto getQuestion(@PathVariable int postId) {
         List<QuestionDto> list = new ArrayList<>();
-        list.add(new QuestionDto(1,new Date(),"주문영역질문","123","나이키신발질문","왜이렇게큰가요",true,true));
-        list.add(new QuestionDto(2,new Date(),"배송영역질문","456","꽃무늬원피스질문","왜이렇게작은가요",false,false));
+        list.add(new QuestionDto(1,true,null,"주문영역질문","123","나이키신발질문","왜이렇게큰가요",true,true));
+        list.add(new QuestionDto(2,false,null,"배송영역질문","456","꽃무늬원피스질문","왜이렇게작은가요",false,false));
 
         QuestionDto foundedBoard = null;
 
@@ -41,7 +41,7 @@ public class BoardController {
     }
 
     @GetMapping("answer/{postId}")
-    public AnswerDto getAnswer() {
+    public AnswerDto getAnswer(@PathVariable String postId) {
 
 
 
