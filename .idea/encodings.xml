@@ -3,5 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/shoppingmall_board-boot/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shoppingmall_board-boot/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shoppingmall_board-domain/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shoppingmall_board-rest/src/main/java" charset="UTF-8" />
   </component>
 </project>

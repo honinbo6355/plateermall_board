@@ -1,8 +1,8 @@
 server:
-  port: 8081
+  port: 9999
 
 spring:
-  profiles: local
+#  profiles: local
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
     username: newbie

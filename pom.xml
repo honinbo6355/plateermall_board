@@ -8,8 +8,9 @@
   <artifactId>shoppingmall_board</artifactId>
   <version>1.0-SNAPSHOT</version>
   <modules>
-    <module>BoardBoot</module>
     <module>shoppingmall_board-boot</module>
+    <module>shoppingmall_board-rest</module>
+    <module>shoppingmall_board-domain</module>
   </modules>
   <packaging>pom</packaging>
 
