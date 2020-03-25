@@ -13,3 +13,83 @@
 395  [main] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
 1815 [main] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 1.635 seconds (JVM running for 2.166)
 1816 [main] ERROR com.plateer.BoardBootApplication - 부트 잘 ~ 돌아간다.
+874  [main] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 2780 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+878  [main] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+878  [main] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+3961 [main] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 3.585 seconds (JVM running for 4.721)
+3961 [main] ERROR com.plateer.BoardBootApplication - 부트 잘 ~ 돌아간다.
+770  [main] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 14828 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+773  [main] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+774  [main] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+3561 [main] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 3.218 seconds (JVM running for 4.341)
+3562 [main] ERROR com.plateer.BoardBootApplication - 부트 잘 ~ 돌아간다.
+1202 [main] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 10844 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+1207 [main] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+1208 [main] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+4021 [main] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 3.402 seconds (JVM running for 5.072)
+4022 [main] ERROR com.plateer.BoardBootApplication - 부트 잘 ~ 돌아간다.
+900  [main] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 13060 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+902  [main] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+903  [main] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+3719 [main] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 3.309 seconds (JVM running for 4.534)
+3721 [main] ERROR com.plateer.BoardBootApplication - 부트 잘 ~ 돌아간다.
+1088 [main] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 6796 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+1090 [main] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+1091 [main] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+3701 [main] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 3.215 seconds (JVM running for 4.559)
+3702 [main] ERROR com.plateer.BoardBootApplication - 부트 잘 ~ 돌아간다.
+904  [main] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 4436 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+906  [main] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+906  [main] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+3568 [main] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 3.156 seconds (JVM running for 4.466)
+3570 [main] ERROR com.plateer.BoardBootApplication - 부트 잘 ~ 돌아간다.
+940  [main] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 6476 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+943  [main] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+943  [main] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+3431 [main] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 3.012 seconds (JVM running for 4.322)
+3432 [main] ERROR com.plateer.BoardBootApplication - 부트 잘 ~ 돌아간다.
+919  [main] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 15644 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+925  [main] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+925  [main] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+3502 [main] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 3.084 seconds (JVM running for 4.304)
+3504 [main] ERROR com.plateer.BoardBootApplication - 부트 잘 ~ 돌아간다.
+1137 [main] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 456 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+1140 [main] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+1141 [main] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+4228 [main] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 3.772 seconds (JVM running for 5.347)
+4230 [main] ERROR com.plateer.BoardBootApplication - 부트 잘 ~ 돌아간다.
+830  [main] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 4448 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+845  [main] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+845  [main] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+3291 [main] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 2.924 seconds (JVM running for 4.151)
+3291 [main] ERROR com.plateer.BoardBootApplication - 부트 잘 ~ 돌아간다.
+955  [main] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 4116 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+963  [main] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+963  [main] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+3499 [main] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 3.095 seconds (JVM running for 4.354)
+3499 [main] ERROR com.plateer.BoardBootApplication - 부트 잘 ~ 돌아간다.
+1134 [main] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 4044 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+1137 [main] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+1138 [main] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+4256 [main] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 3.649 seconds (JVM running for 5.324)
+4256 [main] ERROR com.plateer.BoardBootApplication - 부트 잘 ~ 돌아간다.
+910  [main] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 13632 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+910  [main] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+918  [main] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+3401 [main] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 3.002 seconds (JVM running for 4.239)
+3417 [main] ERROR com.plateer.BoardBootApplication - 부트 잘 ~ 돌아간다.
+1114 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 12252 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+1122 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+1124 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+5269 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 4.743 seconds (JVM running for 6.18)
+5269 [restartedMain] ERROR com.plateer.BoardBootApplication - 부트 잘 ~ 돌아간다.
+27873 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 12252 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+27873 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+27873 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+29283 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 1.47 seconds (JVM running for 30.191)
+29283 [restartedMain] ERROR com.plateer.BoardBootApplication - 부트 잘 ~ 돌아간다.
+106060 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 12252 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+106060 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+106060 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+107162 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 1.171 seconds (JVM running for 108.073)
+107162 [restartedMain] ERROR com.plateer.BoardBootApplication - 부트 잘 ~ 돌아간다.
