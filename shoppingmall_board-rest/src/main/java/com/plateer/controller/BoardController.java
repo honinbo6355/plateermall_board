@@ -19,8 +19,8 @@ public class BoardController {
     private List<AnswerDto> answerList = new ArrayList<>();
 
     public BoardController() {
-        questionList.add(new QuestionDto(1, true, null, "주문영역질문", "123", "나이키신발질문", "왜이렇게큰가요", true, true));
-        questionList.add(new QuestionDto(2, false, null, "배송영역질문", "456", "꽃무늬원피스질문", "왜이렇게작은가요", false, false));
+        questionList.add(new QuestionDto(1, true, "최단비", "1915 - 5 - 2", "주문영역질문", "123", "나이키신발질문", "왜이렇게큰가요", true, true));
+        questionList.add(new QuestionDto(2, false, "장명섭", "1993 - 3 - 11", "배송영역질문", "456", "꽃무늬원피스질문", "왜이렇게작은가요", false, false));
 
         answerList.add(new AnswerDto(1, null, "관리자", "당신의 발이 큰 탓입니다."));
         answerList.add(new AnswerDto(2, null, "관리자", "당신이 살이 찐 탓입니다.."));
@@ -36,7 +36,7 @@ public class BoardController {
 
         QuestionDto foundedQuestion = null;
 
-        for(int i=0; i < questionList.size(); i++) {
+        for (int i = 0; i < questionList.size(); i++) {
             if (questionList.get(i).getPostId() == postId) {
                 foundedQuestion = questionList.get(i);
             }
@@ -49,7 +49,7 @@ public class BoardController {
 
         AnswerDto foundedAnswer = null;
 
-        for(int i=0; i < answerList.size(); i++) {
+        for (int i = 0; i < answerList.size(); i++) {
             if (answerList.get(i).getPostId() == postId) {
                 foundedAnswer = answerList.get(i);
             }
@@ -62,6 +62,7 @@ public class BoardController {
         questionList.add(new QuestionDto(
                         3,
                         false,
+                        null,                   //작성자의 닉네임(?)을 넣어야함
                         questionDto.getDate(),
                         questionDto.getTerritory(),
                         questionDto.getGoodsCode(),
@@ -71,5 +72,36 @@ public class BoardController {
                         questionDto.isEmailAlarm()
                 )
         );
+    }
+
+    @DeleteMapping("question/delete/{postId}")
+    public boolean questionDelete(@PathVariable int postId) {
+
+        boolean flag = false;
+        //만약에 답변이 달렸으면 true
+        for (int i = 0; i < answerList.size(); i++) {
+            if (answerList.get(i).getPostId() == postId) {
+                flag = true;
+                break;
+            }
+        }
+        if(!flag) {
+            for (int j = 0; j < questionList.size(); j++) {
+                if (questionList.get(j).getPostId() == postId) {
+                    questionList.remove(j);
+                }
+            }
+        }
+        return flag;
+    }
+
+    @PutMapping("question/update/")
+    public QuestionDto questionUpdate(@RequestBody QuestionDto questionDto) {
+
+        for(int i=0 ; i<questionList.size() ; i++) {
+
+        }
+
+        return null;
     }
 }

@@ -11,7 +11,7 @@ import lombok.*;
 public class AnswerDto {
 
     private int postId;
-    private Date date;
+    private String date;
     private String writer;
     private String description;
 
