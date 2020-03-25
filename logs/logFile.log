@@ -364,3 +364,83 @@ Caused by: java.io.IOException: 현재 연결은 사용자의 호스트 시스�
 5132339 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
 5133522 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 1.234 seconds (JVM running for 5134.535)
 5133524 [restartedMain] ERROR com.plateer.BoardBootApplication - 부트 잘 ~ 돌아간다.
+501  [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on JEONEK with PID 7012 (C:\Git\shoppingmall_board\shoppingmall_board-boot\target\classes started by JEONEK in C:\Git\shoppingmall_board)
+502  [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+503  [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+2178 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 1.923 seconds (JVM running for 2.56)
+2180 [restartedMain] ERROR com.plateer.BoardBootApplication - 부트 잘 ~ 돌아간다.
+425  [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on JEONEK with PID 7928 (C:\Git\shoppingmall_board\shoppingmall_board-boot\target\classes started by JEONEK in C:\Git\shoppingmall_board)
+427  [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+427  [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+1973 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 1.76 seconds (JVM running for 2.315)
+1974 [restartedMain] ERROR com.plateer.BoardBootApplication - 부트 잘 ~ 돌아간다.
+435  [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on JEONEK with PID 1256 (C:\Git\shoppingmall_board\shoppingmall_board-boot\target\classes started by JEONEK in C:\Git\shoppingmall_board)
+436  [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+436  [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+1978 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 1.765 seconds (JVM running for 2.303)
+1979 [restartedMain] ERROR com.plateer.BoardBootApplication - 부트 잘 ~ 돌아간다.
+428  [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on JEONEK with PID 4328 (C:\Git\shoppingmall_board\shoppingmall_board-boot\target\classes started by JEONEK in C:\Git\shoppingmall_board)
+429  [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+429  [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+1951 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 1.736 seconds (JVM running for 2.289)
+1953 [restartedMain] ERROR com.plateer.BoardBootApplication - 부트 잘 ~ 돌아간다.
+435  [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on JEONEK with PID 6796 (C:\Git\shoppingmall_board\shoppingmall_board-boot\target\classes started by JEONEK in C:\Git\shoppingmall_board)
+437  [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+437  [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+1975 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 1.756 seconds (JVM running for 2.312)
+1977 [restartedMain] ERROR com.plateer.BoardBootApplication - 부트 잘 ~ 돌아간다.
+487  [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on JEONEK with PID 9904 (C:\Git\shoppingmall_board\shoppingmall_board-boot\target\classes started by JEONEK in C:\Git\shoppingmall_board)
+488  [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+488  [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+2277 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 2.019 seconds (JVM running for 3.039)
+2280 [restartedMain] ERROR com.plateer.BoardBootApplication - 부트 잘 ~ 돌아간다.
+433  [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on JEONEK with PID 1952 (C:\Git\shoppingmall_board\shoppingmall_board-boot\target\classes started by JEONEK in C:\Git\shoppingmall_board)
+434  [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+434  [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+1925 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 1.709 seconds (JVM running for 2.277)
+1927 [restartedMain] ERROR com.plateer.BoardBootApplication - 부트 잘 ~ 돌아간다.
+438  [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on JEONEK with PID 7572 (C:\Git\shoppingmall_board\shoppingmall_board-boot\target\classes started by JEONEK in C:\Git\shoppingmall_board)
+440  [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+440  [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+1909 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 1.676 seconds (JVM running for 2.4)
+1911 [restartedMain] ERROR com.plateer.BoardBootApplication - 부트 잘 ~ 돌아간다.
+433  [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on JEONEK with PID 664 (C:\Git\shoppingmall_board\shoppingmall_board-boot\target\classes started by JEONEK in C:\Git\shoppingmall_board)
+434  [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+435  [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+1994 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 1.775 seconds (JVM running for 2.335)
+1995 [restartedMain] ERROR com.plateer.BoardBootApplication - 부트 잘 ~ 돌아간다.
+448  [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on JEONEK with PID 6588 (C:\Git\shoppingmall_board\shoppingmall_board-boot\target\classes started by JEONEK in C:\Git\shoppingmall_board)
+449  [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+449  [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+1953 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 1.728 seconds (JVM running for 2.297)
+1954 [restartedMain] ERROR com.plateer.BoardBootApplication - 부트 잘 ~ 돌아간다.
+510  [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on JEONEK with PID 7420 (C:\Git\shoppingmall_board\shoppingmall_board-boot\target\classes started by JEONEK in C:\Git\shoppingmall_board)
+511  [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+512  [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+2022 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 1.782 seconds (JVM running for 2.41)
+2023 [restartedMain] ERROR com.plateer.BoardBootApplication - 부트 잘 ~ 돌아간다.
+425  [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on JEONEK with PID 1980 (C:\Git\shoppingmall_board\shoppingmall_board-boot\target\classes started by JEONEK in C:\Git\shoppingmall_board)
+426  [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+426  [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+1937 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 1.723 seconds (JVM running for 2.259)
+1938 [restartedMain] ERROR com.plateer.BoardBootApplication - 부트 잘 ~ 돌아간다.
+942282 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on JEONEK with PID 1980 (C:\Git\shoppingmall_board\shoppingmall_board-boot\target\classes started by JEONEK in C:\Git\shoppingmall_board)
+942282 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+942282 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+942983 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 0.735 seconds (JVM running for 943.306)
+942984 [restartedMain] ERROR com.plateer.BoardBootApplication - 부트 잘 ~ 돌아간다.
+438  [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on JEONEK with PID 6196 (C:\Git\shoppingmall_board\shoppingmall_board-boot\target\classes started by JEONEK in C:\Git\shoppingmall_board)
+440  [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+440  [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+2182 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 1.965 seconds (JVM running for 2.504)
+2183 [restartedMain] ERROR com.plateer.BoardBootApplication - 부트 잘 ~ 돌아간다.
+440  [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on JEONEK with PID 8284 (C:\Git\shoppingmall_board\shoppingmall_board-boot\target\classes started by JEONEK in C:\Git\shoppingmall_board)
+442  [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+442  [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+2028 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 1.81 seconds (JVM running for 2.383)
+2029 [restartedMain] ERROR com.plateer.BoardBootApplication - 부트 잘 ~ 돌아간다.
+476  [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on JEONEK with PID 1228 (C:\Git\shoppingmall_board\shoppingmall_board-boot\target\classes started by JEONEK in C:\Git\shoppingmall_board)
+477  [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+477  [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+2014 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 1.765 seconds (JVM running for 2.363)
+2016 [restartedMain] ERROR com.plateer.BoardBootApplication - 부트 잘 ~ 돌아간다.
