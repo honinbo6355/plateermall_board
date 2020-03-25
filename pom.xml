@@ -11,6 +11,7 @@
     <module>shoppingmall_board-boot</module>
     <module>shoppingmall_board-rest</module>
     <module>shoppingmall_board-domain</module>
+      <module>shoppingmall_board-service</module>
   </modules>
   <packaging>pom</packaging>
 

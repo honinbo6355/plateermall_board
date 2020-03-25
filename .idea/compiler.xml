@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="shoppingmall_board-domain" />
         <module name="shoppingmall_board-rest" />
+        <module name="shoppingmall_board-service" />
         <module name="shoppingmall_board-boot" />
       </profile>
     </annotationProcessing>
