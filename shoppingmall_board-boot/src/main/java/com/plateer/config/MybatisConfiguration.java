@@ -11,7 +11,7 @@ import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import javax.sql.DataSource;
 
 @Configuration
-@MapperScan(basePackages = "com.plateer", lazyInitialization = "false")
+@MapperScan(basePackages = "com.plateer.mapper", lazyInitialization = "false")
 public class MybatisConfiguration {
 
     private DataSource dataSource;
@@ -28,7 +28,7 @@ public class MybatisConfiguration {
 
         PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
 
-        sessionFactory.setMapperLocations(resolver.getResources("classpath*:/mapper/**/*.xml"));
+        sessionFactory.setMapperLocations(resolver.getResources("classpath*:com/plateer/mapper/**/*.xml"));
         sessionFactory.setConfigLocation(resolver.getResource("classpath:/mybatis-config.xml"));
         return sessionFactory.getObject();
     }

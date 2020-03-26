@@ -11,8 +11,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 public class BoardBootApplication {
     public static void main(String[] args) {
 
-//        System.out.println("Hello World !!");
         SpringApplication.run(BoardBootApplication.class, args);
-        log.error("부트 잘 ~ 돌아간다.");
+        log.error("plateer mall starting...");
     }
 }
