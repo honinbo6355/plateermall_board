@@ -8,7 +8,7 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class AnswerDto {
+public class Answer {
 
     private int postId;
     private String date;

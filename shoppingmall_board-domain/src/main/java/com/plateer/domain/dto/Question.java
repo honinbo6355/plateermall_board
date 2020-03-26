@@ -7,7 +7,7 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class QuestionDto {
+public class Question {
 
     private int postId;             //문의글의 ID (PK)
     private boolean state;          //문의에 대한 답변의 상태
