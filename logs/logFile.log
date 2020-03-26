@@ -364,3 +364,8 @@ Caused by: java.io.IOException: 현재 연결은 사용자의 호스트 시스�
 5132339 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
 5133522 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 1.234 seconds (JVM running for 5134.535)
 5133524 [restartedMain] ERROR com.plateer.BoardBootApplication - 부트 잘 ~ 돌아간다.
+1166 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 7680 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+1166 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+1182 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+3920 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 3.329 seconds (JVM running for 4.82)
+3920 [restartedMain] ERROR com.plateer.BoardBootApplication - 부트 잘 ~ 돌아간다.

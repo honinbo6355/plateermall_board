@@ -8,11 +8,14 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../shoppingmall_board-service/pom.xml" />
+        <option value="$PROJECT_DIR$/../shoppingmall_board-store/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/BoardBoot/pom.xml" />
+        <option value="$PROJECT_DIR$/shoppingmall_board-service/pom.xml" />
       </set>
     </option>
   </component>
