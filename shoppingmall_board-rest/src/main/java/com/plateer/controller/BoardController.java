@@ -74,34 +74,28 @@ public class BoardController {
         );
     }
 
-    @DeleteMapping("question/delete/{postId}")
-    public boolean questionDelete(@PathVariable int postId) {
+    @GetMapping("question/delete/{postId}")
+    public void questionDelete(@PathVariable int postId) {
 
-        boolean flag = false;
-        //만약에 답변이 달렸으면 true
-        for (int i = 0; i < answerList.size(); i++) {
-            if (answerList.get(i).getPostId() == postId) {
-                flag = true;
-                break;
+        for(int i=0 ; i<questionList.size() ; i++) {
+            if(questionList.get(i).getPostId()==postId) {
+                questionList.remove(i);
+                return;
             }
         }
-        if(!flag) {
-            for (int j = 0; j < questionList.size(); j++) {
-                if (questionList.get(j).getPostId() == postId) {
-                    questionList.remove(j);
-                }
-            }
-        }
-        return flag;
     }
 
-    @PutMapping("question/update/")
+    @GetMapping("question/update/")
     public QuestionDto questionUpdate(@RequestBody QuestionDto questionDto) {
 
         for(int i=0 ; i<questionList.size() ; i++) {
-
+            if(questionList.get(i).getPostId()==questionDto.getPostId()) {
+                questionList.get(i).setTerritory(questionDto.getTerritory());
+                questionList.get(i).setGoodsCode(questionDto.getGoodsCode());
+                questionList.get(i).setTitle(questionDto.getTitle());
+                questionList.get(i).setDescription(questionDto.getDescription());
+            }
         }
-
         return null;
     }
 }
