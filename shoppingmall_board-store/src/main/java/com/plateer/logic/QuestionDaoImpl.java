@@ -24,9 +24,7 @@ public class QuestionDaoImpl implements QuestionDao {
     @Override
     public List<Question> findAll() {
 
-        List<Question> list = new ArrayList<>();
-        list = this.questionMapper.selectAll();
-        return list;
+        return this.questionMapper.selectAll();
     }
 
     @Override

@@ -18,8 +18,10 @@
         select * from Question
     </select>
 
-    <update id="update">
-
+    <update id="update" parameterType="com.plateer.domain.dto.Question">
+		update Question
+		set territory=#{territory}, title=#{title}, description=#{description}
+		where postId=#{postId}		
     </update>
 
     <delete id="delete" parameterType="Integer">

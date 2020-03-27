@@ -1,8 +1,11 @@
 package com.plateer.logic;
 
+import org.springframework.stereotype.Service;
+
 import com.plateer.AnswerService;
 import com.plateer.domain.dto.Answer;
 
+@Service
 public class AnswerLogic implements AnswerService {
 
     private AnswerDaoImpl answerDao;

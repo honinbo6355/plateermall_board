@@ -36,7 +36,8 @@ public class QuestionLogic implements QuestionService
 
     @Override
     public void updateQuestion(Question question) {
-
+    	
+    	questionDao.update(question);
     }
 
     @Override
