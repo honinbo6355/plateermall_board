@@ -7,12 +7,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="shoppingmall_board-service" />
-        <module name="shoppingmall_board-store" />
-        <module name="shoppingmall_board-rest" />
         <module name="shoppingmall_board-domain" />
+        <module name="shoppingmall_board-rest" />
+        <module name="asdffads" />
         <module name="shoppingmall_board-boot" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="asdffads" target="1.5" />
+      <module name="shoppingmall_board-service" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>

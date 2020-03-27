@@ -15,7 +15,9 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/BoardBoot/pom.xml" />
+        <option value="$PROJECT_DIR$/asdffads/pom.xml" />
         <option value="$PROJECT_DIR$/shoppingmall_board-service/pom.xml" />
+        <option value="$PROJECT_DIR$/shoppingmall_board-service2/pom.xml" />
       </set>
     </option>
   </component>

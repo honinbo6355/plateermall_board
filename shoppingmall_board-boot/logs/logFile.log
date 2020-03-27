@@ -1,0 +1,116 @@
+1218 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 16212 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+1218 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+1218 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+4817 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 4.278 seconds (JVM running for 5.679)
+4829 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+770  [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 5668 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+770  [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+770  [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+3074 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9999 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9999 or configure this application to listen on another port.
+
+880  [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 13172 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+880  [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+880  [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+359836 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 16212 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+359836 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+359836 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+360796 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 1.013 seconds (JVM running for 361.654)
+360796 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+3554 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9999 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9999 or configure this application to listen on another port.
+
+393686 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 16212 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+393686 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+393686 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+394759 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 1.125 seconds (JVM running for 395.625)
+394775 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+802  [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 1292 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+802  [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+802  [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+3106 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8888 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8888 or configure this application to listen on another port.
+
+409617 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 16212 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+409617 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+409617 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+410548 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 0.98 seconds (JVM running for 411.413)
+410548 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+864  [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 7612 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+864  [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+864  [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+3222 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8082 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8082 or configure this application to listen on another port.
+
+586  [background-preinit] DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+708  [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 2772 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+708  [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+708  [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+2975 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8082 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8082 or configure this application to listen on another port.
+
+724  [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 8040 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+724  [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+724  [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+2960 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 2.614 seconds (JVM running for 3.583)
+2965 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+748  [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 9552 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+748  [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+748  [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+2991 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 2.639 seconds (JVM running for 3.634)
+3009 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
