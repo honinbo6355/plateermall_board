@@ -2,20 +2,24 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
-      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="shoppingmall_board-store" />
         <module name="shoppingmall_board-domain" />
         <module name="shoppingmall_board-rest" />
-        <module name="asdffads" />
+        <module name="shoppingmall_board-service" />
         <module name="shoppingmall_board-boot" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="asdffads" target="1.5" />
-      <module name="shoppingmall_board-service" target="1.7" />
+      <module name="shoppingmall_board" target="1.5" />
+      <module name="shoppingmall_board-boot" target="1.8" />
+      <module name="shoppingmall_board-domain" target="1.8" />
+      <module name="shoppingmall_board-rest" target="1.8" />
+      <module name="shoppingmall_board-service" target="1.8" />
+      <module name="shoppingmall_board-store" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
