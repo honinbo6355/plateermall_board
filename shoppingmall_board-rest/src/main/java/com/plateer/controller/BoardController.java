@@ -2,14 +2,8 @@ package com.plateer.controller;
 
 import java.util.List;
 
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.apache.ibatis.annotations.Update;
+import org.springframework.web.bind.annotation.*;
 
 import com.plateer.domain.dto.Answer;
 import com.plateer.domain.dto.Question;
@@ -53,17 +47,17 @@ public class BoardController {
 
 	@PostMapping("question/registration/")
 	public void questionRegistration(@RequestBody Question question) {
-		System.out.println(question.getTitle());
+
 		questionLogic.createQuestion(question);
 	}
 
-	@GetMapping("question/delete/{postId}")
+	@DeleteMapping("question/delete/{postId}")
 	public void questionDelete(@PathVariable int postId) {
 
 		questionLogic.deleteQuestion(postId);
 	}
 
-	@PostMapping("question/update/")
+	@PutMapping("question/update/")
 	public void questionUpdate(@RequestBody Question question) {
 		
 		questionLogic.updateQuestion(question);
