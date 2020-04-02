@@ -10,6 +10,8 @@ public interface QuestionDao {
 
     List<Question> findAll();
 
+    List<Question> findByUserName(String userName);
+
     Question find(int postId);
 
     void update(Question question);

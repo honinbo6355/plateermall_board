@@ -18,6 +18,11 @@
         select * from Question
     </select>
 
+    <select id="selectByUserName" parameterType="String" resultType="com.plateer.domain.dto.Question">
+        select * from Question
+        where writer = #{userName}
+    </select>
+
     <update id="update" parameterType="com.plateer.domain.dto.Question">
 		update Question
 		set territory=#{territory}, title=#{title}, description=#{description}

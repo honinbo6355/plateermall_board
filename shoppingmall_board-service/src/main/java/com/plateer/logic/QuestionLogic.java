@@ -1,5 +1,6 @@
 package com.plateer.logic;
 
+import com.plateer.QuestionDao;
 import com.plateer.QuestionService;
 import com.plateer.domain.dto.Question;
 import org.springframework.stereotype.Service;
@@ -9,7 +10,7 @@ import java.util.List;
 @Service
 public class QuestionLogic implements QuestionService
 {
-    private QuestionDaoImpl questionDao;
+    private QuestionDao questionDao;
 
     public QuestionLogic(QuestionDaoImpl questionDao) {
         this.questionDao = questionDao;
@@ -29,6 +30,13 @@ public class QuestionLogic implements QuestionService
     }
 
     @Override
+    public List<Question> findByUserName(String userName) {
+
+        System.out.println("Logic : " + userName);
+        return questionDao.findByUserName(userName);
+    }
+
+    @Override
     public Question questionDetail(int postId) {
 
         return questionDao.find(postId);
@@ -42,6 +50,7 @@ public class QuestionLogic implements QuestionService
 
     @Override
     public void deleteQuestion(int postId) {
+
         questionDao.delete(postId);
     }
 }

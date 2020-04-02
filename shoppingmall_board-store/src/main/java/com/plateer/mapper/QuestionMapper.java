@@ -18,4 +18,6 @@ public interface QuestionMapper {
 
     void delete(int postId);
 
+    List<Question> selectByUserName(String userName);
+
 }

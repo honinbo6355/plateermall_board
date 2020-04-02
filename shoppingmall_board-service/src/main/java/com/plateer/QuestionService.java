@@ -11,6 +11,8 @@ public interface QuestionService {
 
     List<Question> findAllQuestions();
 
+    List<Question> findByUserName(String userName);
+
     Question questionDetail(int postId);
 
     void updateQuestion(Question question);

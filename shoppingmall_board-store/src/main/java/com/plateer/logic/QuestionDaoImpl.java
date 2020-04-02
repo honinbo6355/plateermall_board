@@ -28,11 +28,18 @@ public class QuestionDaoImpl implements QuestionDao {
     }
 
     @Override
+    public List<Question> findByUserName(String userName) {
+
+        System.out.println("DAOImple : " + userName);
+        return this.questionMapper.selectByUserName(userName);
+    }
+
+    @Override
     public Question find(int postId) {
 
-        Question foundedQuestion;
-        foundedQuestion = this.questionMapper.select(postId);
-        return foundedQuestion;
+//        Question foundedQuestion;
+//        foundedQuestion = this.questionMapper.select(postId);
+        return this.questionMapper.select(postId);
     }
 
     @Override
