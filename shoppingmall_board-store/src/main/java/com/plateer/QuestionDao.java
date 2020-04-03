@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface QuestionDao {
 
-    void save(Question question);
+    int save(Question question);
 
     List<Question> findAll();
 

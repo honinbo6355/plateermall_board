@@ -52,9 +52,9 @@ public class BoardController {
 	}
 
 	@PostMapping("question/registration/")
-	public void questionRegistration(@RequestBody Question question) {
+	public int questionRegistration(@RequestBody Question question) {
 
-		questionService.createQuestion(question);
+		return questionService.createQuestion(question);
 	}
 
 	@DeleteMapping("question/delete/{postId}")

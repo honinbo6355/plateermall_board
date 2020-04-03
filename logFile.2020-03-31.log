@@ -1,0 +1,1514 @@
+1433 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 7176 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+1449 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+1449 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+4506 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 3.734 seconds (JVM running for 5.62)
+4512 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+15033 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+15040 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+15071 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 1
+17762 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+17764 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 1(Integer)
+17770 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+17820 [http-nio-9999-exec-5] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 1 
+17820 [http-nio-9999-exec-5] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+17826 [http-nio-9999-exec-5] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+39413 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+39415 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 로그인한 사용자 정보(String), 2020 - 3 - 31(String), 반품접수(String), (String), 반품해주세요(String), 제발(String), false(Boolean), false(Boolean)
+39475 [http-nio-9999-exec-7] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLDataException: (conn=29108) Incorrect integer value: '' for column `NEWBIE`.`Question`.`goodsCode` at row 1
+### The error may exist in file [C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-store\target\classes\com\plateer\mapper\Question.xml]
+### The error may involve com.plateer.mapper.QuestionMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm)         values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+### Cause: java.sql.SQLDataException: (conn=29108) Incorrect integer value: '' for column `NEWBIE`.`Question`.`goodsCode` at row 1
+; (conn=29108) Incorrect integer value: '' for column `NEWBIE`.`Question`.`goodsCode` at row 1; nested exception is java.sql.SQLDataException: (conn=29108) Incorrect integer value: '' for column `NEWBIE`.`Question`.`goodsCode` at row 1] with root cause
+java.sql.SQLException: Incorrect integer value: '' for column `NEWBIE`.`Question`.`goodsCode` at row 1
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.readErrorPacket(AbstractQueryProtocol.java:1598)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.readPacket(AbstractQueryProtocol.java:1460)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.getResult(AbstractQueryProtocol.java:1423)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.executeQuery(AbstractQueryProtocol.java:281)
+	at org.mariadb.jdbc.ClientSidePreparedStatement.executeInternal(ClientSidePreparedStatement.java:213)
+	at org.mariadb.jdbc.ClientSidePreparedStatement.execute(ClientSidePreparedStatement.java:145)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy96.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy76.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:144)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy77.insert(Unknown Source)
+	at com.plateer.logic.QuestionDaoImpl.save(QuestionDaoImpl.java:21)
+	at com.plateer.logic.QuestionDaoImpl$$FastClassBySpringCGLIB$$1ffbb644.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.plateer.logic.QuestionDaoImpl$$EnhancerBySpringCGLIB$$446893a5.save(<generated>)
+	at com.plateer.logic.QuestionLogic.createQuestion(QuestionLogic.java:22)
+	at com.plateer.controller.BoardController.questionRegistration(BoardController.java:57)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+40666 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+40666 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+40671 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 1
+42659 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+42659 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+42664 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 1
+48872 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+48872 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+48878 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 1
+50484 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+50485 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+50490 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 1
+64511 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+64512 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 로그인한 사용자 정보(String), 2020 - 3 - 31(String), 반품접수(String), (String), 반품해주세요(String), 반품반품(String), false(Boolean), false(Boolean)
+64517 [http-nio-9999-exec-5] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLDataException: (conn=29108) Incorrect integer value: '' for column `NEWBIE`.`Question`.`goodsCode` at row 1
+### The error may exist in file [C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-store\target\classes\com\plateer\mapper\Question.xml]
+### The error may involve com.plateer.mapper.QuestionMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm)         values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+### Cause: java.sql.SQLDataException: (conn=29108) Incorrect integer value: '' for column `NEWBIE`.`Question`.`goodsCode` at row 1
+; (conn=29108) Incorrect integer value: '' for column `NEWBIE`.`Question`.`goodsCode` at row 1; nested exception is java.sql.SQLDataException: (conn=29108) Incorrect integer value: '' for column `NEWBIE`.`Question`.`goodsCode` at row 1] with root cause
+java.sql.SQLException: Incorrect integer value: '' for column `NEWBIE`.`Question`.`goodsCode` at row 1
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.readErrorPacket(AbstractQueryProtocol.java:1598)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.readPacket(AbstractQueryProtocol.java:1460)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.getResult(AbstractQueryProtocol.java:1423)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.executeQuery(AbstractQueryProtocol.java:281)
+	at org.mariadb.jdbc.ClientSidePreparedStatement.executeInternal(ClientSidePreparedStatement.java:213)
+	at org.mariadb.jdbc.ClientSidePreparedStatement.execute(ClientSidePreparedStatement.java:145)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy96.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy76.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:144)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy77.insert(Unknown Source)
+	at com.plateer.logic.QuestionDaoImpl.save(QuestionDaoImpl.java:21)
+	at com.plateer.logic.QuestionDaoImpl$$FastClassBySpringCGLIB$$1ffbb644.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.plateer.logic.QuestionDaoImpl$$EnhancerBySpringCGLIB$$446893a5.save(<generated>)
+	at com.plateer.logic.QuestionLogic.createQuestion(QuestionLogic.java:22)
+	at com.plateer.controller.BoardController.questionRegistration(BoardController.java:57)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+65482 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+65482 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+65490 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 1
+181434 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+181434 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+181440 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 1
+186647 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+186649 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 로그인한 사용자 정보(String), 2020 - 3 - 31(String), 배송확인(String), (String), ㄴㅇ(String), ㄴㄹ(String), false(Boolean), false(Boolean)
+186655 [http-nio-9999-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLDataException: (conn=29108) Incorrect integer value: '' for column `NEWBIE`.`Question`.`goodsCode` at row 1
+### The error may exist in file [C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-store\target\classes\com\plateer\mapper\Question.xml]
+### The error may involve com.plateer.mapper.QuestionMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm)         values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+### Cause: java.sql.SQLDataException: (conn=29108) Incorrect integer value: '' for column `NEWBIE`.`Question`.`goodsCode` at row 1
+; (conn=29108) Incorrect integer value: '' for column `NEWBIE`.`Question`.`goodsCode` at row 1; nested exception is java.sql.SQLDataException: (conn=29108) Incorrect integer value: '' for column `NEWBIE`.`Question`.`goodsCode` at row 1] with root cause
+java.sql.SQLException: Incorrect integer value: '' for column `NEWBIE`.`Question`.`goodsCode` at row 1
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.readErrorPacket(AbstractQueryProtocol.java:1598)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.readPacket(AbstractQueryProtocol.java:1460)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.getResult(AbstractQueryProtocol.java:1423)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.executeQuery(AbstractQueryProtocol.java:281)
+	at org.mariadb.jdbc.ClientSidePreparedStatement.executeInternal(ClientSidePreparedStatement.java:213)
+	at org.mariadb.jdbc.ClientSidePreparedStatement.execute(ClientSidePreparedStatement.java:145)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy96.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy76.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:144)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy77.insert(Unknown Source)
+	at com.plateer.logic.QuestionDaoImpl.save(QuestionDaoImpl.java:21)
+	at com.plateer.logic.QuestionDaoImpl$$FastClassBySpringCGLIB$$1ffbb644.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.plateer.logic.QuestionDaoImpl$$EnhancerBySpringCGLIB$$446893a5.save(<generated>)
+	at com.plateer.logic.QuestionLogic.createQuestion(QuestionLogic.java:22)
+	at com.plateer.controller.BoardController.questionRegistration(BoardController.java:57)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+187672 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+187672 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+187678 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 1
+221289 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+221290 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+221295 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 1
+225814 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+225815 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 로그인한 사용자 정보(String), 2020 - 3 - 31(String), 배송확인(String), (String), ㄴㅇㄹ(String), ㄴㅇㄹ(String), false(Boolean), false(Boolean)
+225820 [http-nio-9999-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLDataException: (conn=29108) Incorrect integer value: '' for column `NEWBIE`.`Question`.`goodsCode` at row 1
+### The error may exist in file [C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-store\target\classes\com\plateer\mapper\Question.xml]
+### The error may involve com.plateer.mapper.QuestionMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm)         values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+### Cause: java.sql.SQLDataException: (conn=29108) Incorrect integer value: '' for column `NEWBIE`.`Question`.`goodsCode` at row 1
+; (conn=29108) Incorrect integer value: '' for column `NEWBIE`.`Question`.`goodsCode` at row 1; nested exception is java.sql.SQLDataException: (conn=29108) Incorrect integer value: '' for column `NEWBIE`.`Question`.`goodsCode` at row 1] with root cause
+java.sql.SQLException: Incorrect integer value: '' for column `NEWBIE`.`Question`.`goodsCode` at row 1
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.readErrorPacket(AbstractQueryProtocol.java:1598)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.readPacket(AbstractQueryProtocol.java:1460)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.getResult(AbstractQueryProtocol.java:1423)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.executeQuery(AbstractQueryProtocol.java:281)
+	at org.mariadb.jdbc.ClientSidePreparedStatement.executeInternal(ClientSidePreparedStatement.java:213)
+	at org.mariadb.jdbc.ClientSidePreparedStatement.execute(ClientSidePreparedStatement.java:145)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy96.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy76.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:144)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy77.insert(Unknown Source)
+	at com.plateer.logic.QuestionDaoImpl.save(QuestionDaoImpl.java:21)
+	at com.plateer.logic.QuestionDaoImpl$$FastClassBySpringCGLIB$$1ffbb644.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.plateer.logic.QuestionDaoImpl$$EnhancerBySpringCGLIB$$446893a5.save(<generated>)
+	at com.plateer.logic.QuestionLogic.createQuestion(QuestionLogic.java:22)
+	at com.plateer.controller.BoardController.questionRegistration(BoardController.java:57)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+226684 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+226686 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+226691 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 1
+789772 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+789772 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+789782 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 1
+802576 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+802577 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 로그인한 사용자 정보(String), 2020 - 3 - 31(String), 반품접수(String), (String), 반품해주세요(String), 제발(String), false(Boolean), false(Boolean)
+802584 [http-nio-9999-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLDataException: (conn=29178) Incorrect integer value: '' for column `NEWBIE`.`Question`.`goodsCode` at row 1
+### The error may exist in file [C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-store\target\classes\com\plateer\mapper\Question.xml]
+### The error may involve com.plateer.mapper.QuestionMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm)         values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+### Cause: java.sql.SQLDataException: (conn=29178) Incorrect integer value: '' for column `NEWBIE`.`Question`.`goodsCode` at row 1
+; (conn=29178) Incorrect integer value: '' for column `NEWBIE`.`Question`.`goodsCode` at row 1; nested exception is java.sql.SQLDataException: (conn=29178) Incorrect integer value: '' for column `NEWBIE`.`Question`.`goodsCode` at row 1] with root cause
+java.sql.SQLException: Incorrect integer value: '' for column `NEWBIE`.`Question`.`goodsCode` at row 1
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.readErrorPacket(AbstractQueryProtocol.java:1598)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.readPacket(AbstractQueryProtocol.java:1460)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.getResult(AbstractQueryProtocol.java:1423)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.executeQuery(AbstractQueryProtocol.java:281)
+	at org.mariadb.jdbc.ClientSidePreparedStatement.executeInternal(ClientSidePreparedStatement.java:213)
+	at org.mariadb.jdbc.ClientSidePreparedStatement.execute(ClientSidePreparedStatement.java:145)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at jdk.internal.reflect.GeneratedMethodAccessor62.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy96.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy76.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:144)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy77.insert(Unknown Source)
+	at com.plateer.logic.QuestionDaoImpl.save(QuestionDaoImpl.java:21)
+	at com.plateer.logic.QuestionDaoImpl$$FastClassBySpringCGLIB$$1ffbb644.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.plateer.logic.QuestionDaoImpl$$EnhancerBySpringCGLIB$$446893a5.save(<generated>)
+	at com.plateer.logic.QuestionLogic.createQuestion(QuestionLogic.java:22)
+	at com.plateer.controller.BoardController.questionRegistration(BoardController.java:57)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+803555 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+803555 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+803561 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 1
+1226 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 14280 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+1229 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+1230 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+5073 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 4.543 seconds (JVM running for 6.056)
+5077 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+9895 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+9916 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+9936 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 1
+19251 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+19253 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 로그인한 사용자 정보(String), 2020 - 3 - 31(String), 배송확인(String), (String), 제발(String), 좀(String), false(Boolean), false(Boolean)
+19258 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+20277 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+20277 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+20285 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 2
+23939 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+23939 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+23944 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 2
+1165156 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+1165156 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+1165166 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 2
+1184651 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+1184654 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 2(Integer)
+1184662 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+1184695 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 2 
+1184695 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+1184700 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+1189056 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.delete - ==>  Preparing: delete from Question where postId = ? 
+1189056 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.delete - ==> Parameters: 2(Integer)
+1189062 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.delete - <==    Updates: 1
+1191607 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+1191607 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+1191614 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 1
+1193955 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+1193955 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 1(Integer)
+1193961 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+1193974 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 1 
+1193974 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+1193983 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+1229020 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+1229021 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 로그인한 사용자 정보(String), 2020 - 3 - 31(String), L.POINT(String), (String), ㅁㄴㅇㄹ(String), ㅁㄴㅇㄹ(String), false(Boolean), false(Boolean)
+1229026 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+1229899 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+1229899 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+1229916 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 2
+1231456 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+1231456 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 3(Integer)
+1231464 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+1231479 [http-nio-9999-exec-3] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 3 
+1231480 [http-nio-9999-exec-3] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+1231487 [http-nio-9999-exec-3] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+1233424 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.delete - ==>  Preparing: delete from Question where postId = ? 
+1233425 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.delete - ==> Parameters: 3(Integer)
+1233438 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.delete - <==    Updates: 1
+1235722 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+1235723 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 3(Integer)
+1235728 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 0
+1235799 [http-nio-9999-exec-6] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 3 
+1235799 [http-nio-9999-exec-6] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+1235804 [http-nio-9999-exec-6] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+1244997 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+1244997 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+1245006 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 1
+1259623 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+1259623 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+1259630 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 1
+1307202 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+1307202 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+1307208 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 1
+1505017 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+1505019 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 1(Integer)
+1505035 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+1505061 [http-nio-9999-exec-5] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 1 
+1505061 [http-nio-9999-exec-5] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+1505068 [http-nio-9999-exec-5] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+1509502 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+1509502 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+1509507 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 1
+1533554 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+1533555 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 로그인한 사용자 정보(String), 2020 - 3 - 31(String), 반품접수(String), (String), 안녕하세요...(String), 안녕하십니까.....(String), false(Boolean), false(Boolean)
+1533565 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+1534946 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+1534949 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+1534954 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 2
+1577199 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+1577199 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 4(Integer)
+1577204 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+1577222 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 4 
+1577222 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+1577240 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+1579427 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+1579427 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 4(Integer)
+1579432 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+1579485 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 4 
+1579486 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+1579493 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+1582144 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+1582144 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 4(Integer)
+1582151 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+1582178 [http-nio-9999-exec-6] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 4 
+1582178 [http-nio-9999-exec-6] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+1582185 [http-nio-9999-exec-6] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+1582492 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+1582493 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 4(Integer)
+1582499 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+1582545 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 4 
+1582546 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+1582552 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+1582735 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+1582735 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 4(Integer)
+1582741 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+1582806 [http-nio-9999-exec-10] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 4 
+1582807 [http-nio-9999-exec-10] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+1582811 [http-nio-9999-exec-10] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+1583696 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+1583697 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 4(Integer)
+1583708 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+1583744 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 4 
+1583744 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+1583753 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+1613019 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+1613019 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+1613026 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 2
+1614675 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+1614675 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+1614684 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 2
+1615471 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+1615472 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 4(Integer)
+1615480 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+1615507 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 4 
+1615507 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+1615516 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+1654129 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+1654129 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+1654137 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 2
+2325975 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+2325979 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+2325991 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 2
+2329348 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+2329349 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+2329356 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 2
+2369474 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+2369474 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+2369481 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 2
+2769641 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+2769641 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+2769646 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 2
+2779205 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+2779205 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+2779216 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 2
+2788021 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+2788022 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+2788028 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 2
+2792463 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+2792463 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+2792469 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 2
+2798021 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+2798022 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+2798026 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 2
+2799813 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+2799815 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+2799823 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 2
+2806123 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+2806123 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+2806129 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 2
+2841932 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+2841932 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+2841940 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 2
+2842518 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+2842519 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+2842531 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 2
+2843032 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+2843032 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+2843046 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 2
+2843263 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+2843263 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+2843272 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 2
+2843443 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+2843444 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+2843449 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 2
+2843708 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+2843709 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+2843715 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 2
+2843897 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+2843897 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+2843903 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 2
+3012530 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3012530 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3012536 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 2
+3015568 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3015568 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3015578 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 2
+3017628 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+3017628 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 1(Integer)
+3017634 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+3017680 [http-nio-9999-exec-1] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 1 
+3017680 [http-nio-9999-exec-1] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+3017689 [http-nio-9999-exec-1] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+3025092 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3025092 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3025100 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 2
+3028590 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+3028591 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 4(Integer)
+3028600 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+3028644 [http-nio-9999-exec-5] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 4 
+3028644 [http-nio-9999-exec-5] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+3028652 [http-nio-9999-exec-5] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+3207529 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+3207530 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 로그인한 사용자 정보(String), 2020 - 3 - 31(String), 배송확인(String), (String), 아니저기(String), 배송 언제되나요 진짜(String), false(Boolean), false(Boolean)
+3207538 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+3208494 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3208494 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3208503 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+3212799 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+3212800 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 5(Integer)
+3212808 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+3212856 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 5 
+3212856 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+3212865 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+3222830 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3222830 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3222837 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+3222848 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.update - ==>  Preparing: update Question set territory=?, title=?, description=? where postId=? 
+3222848 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.update - ==> Parameters: 배송확인(String), 아니저기(String), 배송 언제되나요 진짜 아닙니다 죄송합니다.(String), 5(Integer)
+3222857 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.update - <==    Updates: 1
+3225155 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+3225155 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 5(Integer)
+3225161 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+3225188 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 5 
+3225188 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+3225195 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+3229076 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.delete - ==>  Preparing: delete from Question where postId = ? 
+3229076 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.delete - ==> Parameters: 5(Integer)
+3229083 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.delete - <==    Updates: 1
+3229088 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3229088 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3229095 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 2
+1080 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 11792 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+1084 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+1084 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+3875 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 3.353 seconds (JVM running for 4.939)
+3875 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+7671 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+7686 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+7719 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 2
+31932 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+31935 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 1(Integer)
+31942 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+31979 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 1 
+31979 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+31984 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+33761 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+33762 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+33768 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 2
+34940 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+34941 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 4(Integer)
+34948 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+34968 [http-nio-9999-exec-6] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 4 
+34968 [http-nio-9999-exec-6] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+34973 [http-nio-9999-exec-6] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+1014135 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+1014136 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 로그인한 사용자 정보(String), 2020 - 3 - 31(String), L.POINT(String), (String), 또 무슨 에러가...(String), ..... 생길지 모릅니다...(String), false(Boolean), false(Boolean)
+1014144 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+1015367 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+1015367 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+1015374 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+1017655 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+1017656 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 6(Integer)
+1017663 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+1017679 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 6 
+1017679 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+1017684 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+2014697 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+2014698 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 6(Integer)
+2014705 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+2015154 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 6 
+2015154 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+2015162 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+2359806 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+2359806 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 6(Integer)
+2359815 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+2359858 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 6 
+2359858 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+2359866 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+3136162 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3136162 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3136162 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+3161638 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3161654 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3161670 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+3162942 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+3162942 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 1(Integer)
+3162960 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+3162993 [http-nio-9999-exec-10] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 1 
+3162993 [http-nio-9999-exec-10] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+3163001 [http-nio-9999-exec-10] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+3168791 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3168791 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3168791 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+3170515 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+3170515 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 6(Integer)
+3170515 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+3170546 [http-nio-9999-exec-6] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 6 
+3170546 [http-nio-9999-exec-6] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+3170546 [http-nio-9999-exec-6] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+3181554 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3181554 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3181554 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+3181577 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.update - ==>  Preparing: update Question set territory=?, title=?, description=? where postId=? 
+3181577 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.update - ==> Parameters: L.POINT(String), 또 무슨 에러가...(String), ..... 생길지 모릅니다...(String), 6(Integer)
+3181792 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.update - <==    Updates: 1
+3182995 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+3182995 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 6(Integer)
+3183010 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+3183026 [http-nio-9999-exec-1] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 6 
+3183026 [http-nio-9999-exec-1] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+3183026 [http-nio-9999-exec-1] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+3187610 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.update - ==>  Preparing: update Question set territory=?, title=?, description=? where postId=? 
+3187610 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.update - ==> Parameters: L.POINT(String), 또 무슨 에러가...(String), ..... 생길지 모릅니다...ㅇㅇㅇㅇ(String), 6(Integer)
+3187610 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3187610 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3187610 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.update - <==    Updates: 1
+3187630 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+3188958 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+3188958 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 6(Integer)
+3188968 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+3188977 [http-nio-9999-exec-5] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 6 
+3188977 [http-nio-9999-exec-5] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+3188991 [http-nio-9999-exec-5] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+3192020 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3192020 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3192031 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+3192248 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.delete - ==>  Preparing: delete from Question where postId = ? 
+3192248 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.delete - ==> Parameters: 6(Integer)
+3192255 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.delete - <==    Updates: 1
+3193883 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+3193883 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 6(Integer)
+3193889 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 0
+3193906 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 6 
+3193907 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+3193914 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+3196247 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3196247 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3196262 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 2
+3205413 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+3205414 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), getCurrentUserInfo(String), 2020 - 3 - 31(String), 배송확인(String), (String), 테스트(String), 관리자.... 테스트입니다..(String), false(Boolean), false(Boolean)
+3205423 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+3206431 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3206431 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3206438 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+3208118 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3208118 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3208127 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+3232106 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3232106 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3232116 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+3242294 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3242294 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3242309 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+3247065 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+3247066 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 7(Integer)
+3247068 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+3247100 [http-nio-9999-exec-10] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 7 
+3247100 [http-nio-9999-exec-10] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+3247100 [http-nio-9999-exec-10] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+3255733 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3255734 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3255744 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+3255752 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.delete - ==>  Preparing: delete from Question where postId = ? 
+3255753 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.delete - ==> Parameters: 7(Integer)
+3255762 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.delete - <==    Updates: 1
+3259344 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+3259344 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 7(Integer)
+3259359 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 0
+3259375 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 7 
+3259375 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+3259375 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+3262051 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3262052 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3262058 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 2
+3405172 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+3405174 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), null, 2020 - 3 - 31(String), L.POINT(String), (String), ㄴㅇㄹ(String), ㄴㅇㄹ(String), false(Boolean), false(Boolean)
+3405259 [http-nio-9999-exec-9] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: (conn=30554) Column 'writer' cannot be null
+### The error may exist in file [C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-store\target\classes\com\plateer\mapper\Question.xml]
+### The error may involve com.plateer.mapper.QuestionMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm)         values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+### Cause: java.sql.SQLIntegrityConstraintViolationException: (conn=30554) Column 'writer' cannot be null
+; (conn=30554) Column 'writer' cannot be null; nested exception is java.sql.SQLIntegrityConstraintViolationException: (conn=30554) Column 'writer' cannot be null] with root cause
+java.sql.SQLException: Column 'writer' cannot be null
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.readErrorPacket(AbstractQueryProtocol.java:1598)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.readPacket(AbstractQueryProtocol.java:1460)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.getResult(AbstractQueryProtocol.java:1423)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.executeQuery(AbstractQueryProtocol.java:281)
+	at org.mariadb.jdbc.ClientSidePreparedStatement.executeInternal(ClientSidePreparedStatement.java:213)
+	at org.mariadb.jdbc.ClientSidePreparedStatement.execute(ClientSidePreparedStatement.java:145)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at jdk.internal.reflect.GeneratedMethodAccessor82.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy96.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy76.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:144)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy77.insert(Unknown Source)
+	at com.plateer.logic.QuestionDaoImpl.save(QuestionDaoImpl.java:21)
+	at com.plateer.logic.QuestionDaoImpl$$FastClassBySpringCGLIB$$1ffbb644.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.plateer.logic.QuestionDaoImpl$$EnhancerBySpringCGLIB$$9e0e4f4a.save(<generated>)
+	at com.plateer.logic.QuestionLogic.createQuestion(QuestionLogic.java:22)
+	at com.plateer.controller.BoardController.questionRegistration(BoardController.java:57)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+3406213 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3406213 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3406446 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 2
+3522272 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+3522272 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 관리자(String), 2020 - 3 - 31(String), L.POINT(String), (String), ddd(String), ddd(String), false(Boolean), false(Boolean)
+3522287 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+3523189 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3523189 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3523205 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+3527573 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3527573 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3527573 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+3535663 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+3535663 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 8(Integer)
+3535682 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+3535713 [http-nio-9999-exec-1] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 8 
+3535713 [http-nio-9999-exec-1] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+3535713 [http-nio-9999-exec-1] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+3546088 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3546088 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3546094 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+3556131 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+3556132 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 관리자(String), 2020 - 3 - 31(String), L.POINT(String), (String), 관리자으 ㅣ테스트입니다(String), 커엽(String), false(Boolean), false(Boolean)
+3556137 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+3557043 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3557043 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3557049 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+3558526 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+3558527 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 9(Integer)
+3558536 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+3558560 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 9 
+3558560 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+3558567 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+3560062 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3560062 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3560069 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+3648507 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+3648507 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 8(Integer)
+3648515 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+3648527 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 8 
+3648527 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+3648534 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+3653547 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3653547 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3653552 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.delete - ==>  Preparing: delete from Question where postId = ? 
+3653552 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.delete - ==> Parameters: 8(Integer)
+3653553 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+3653561 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.delete - <==    Updates: 1
+3657106 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3657106 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3657113 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+3719673 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+3719673 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 9(Integer)
+3719673 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+3719698 [http-nio-9999-exec-10] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 9 
+3719698 [http-nio-9999-exec-10] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+3719702 [http-nio-9999-exec-10] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+3732626 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3732627 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3732634 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+3735239 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3735239 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3735249 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+3813231 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+3813232 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 9(Integer)
+3813239 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+3813262 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 9 
+3813262 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+3813266 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+3820675 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.delete - ==>  Preparing: delete from Question where postId = ? 
+3820675 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.delete - ==> Parameters: 9(Integer)
+3820683 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3820683 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3820683 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.delete - <==    Updates: 1
+3820690 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 2
+3879415 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+3879416 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 관리자(String), 2020 - 3 - 31(String), 교환접수(String), (String), 안녕하세요 여러분(String), 이제 제가 누구인지도 나옵니다 !(String), false(Boolean), false(Boolean)
+3879426 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+3880820 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3880820 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3880828 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+3895070 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3895071 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3895077 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+3899453 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3899453 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3899459 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+3958360 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3958360 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3958365 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+4037460 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+4037460 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 1(Integer)
+4037467 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+4037483 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 1 
+4037483 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+4037489 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+4063111 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+4063112 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+4063117 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+4066021 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+4066021 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 10(Integer)
+4066030 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+4066050 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 10 
+4066051 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+4066057 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+4071404 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.delete - ==>  Preparing: delete from Question where postId = ? 
+4071404 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.delete - ==> Parameters: 10(Integer)
+4071410 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+4071410 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+4071413 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.delete - <==    Updates: 1
+4071415 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 2
+4076594 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+4076594 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+4076605 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 2
+4077389 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+4077389 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+4077395 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 2
+4079702 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+4079703 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+4079710 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 2
+4082089 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+4082089 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+4082095 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 2
+4093002 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+4093002 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 관리자(String), 2020 - 3 - 31(String), 배송확인(String), (String), 안녕하세요 여러분(String), 제가 오늘 입은 옷은요(String), false(Boolean), false(Boolean)
+4093009 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+4094660 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+4094660 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+4094665 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+4096625 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+4096625 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+4096629 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+4700168 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+4700169 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+4700175 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+4701173 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+4701173 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+4701181 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+4719879 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+4719880 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+4719887 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+4723521 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+4723521 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+4723529 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+4725374 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+4725374 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+4725380 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+4726959 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+4726959 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+4726964 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+5068506 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+5068506 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+5068513 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+5069659 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+5069659 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+5069665 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+5165655 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+5165655 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+5165664 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+5167375 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+5167375 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 1(Integer)
+5167388 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+5167401 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 1 
+5167401 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+5167412 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+5277574 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+5277574 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+5277581 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+5279961 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+5279961 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+5279966 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+5620483 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+5620483 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+5620493 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+6937064 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+6937065 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+6937073 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+6938270 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+6938271 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 11(Integer)
+6938280 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+6938298 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 11 
+6938299 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+6938303 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+6967124 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+6967124 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+6967129 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+6968511 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+6968511 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 1(Integer)
+6968521 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+6968532 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 1 
+6968533 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+6968748 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+7006678 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+7006678 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+7006686 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+7108098 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+7108098 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+7108105 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+7217918 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+7217918 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+7217924 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+7738080 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+7738080 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+7738095 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+7748905 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+7748905 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+7748912 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+7750137 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+7750137 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+7750144 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+8173533 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8173533 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8173541 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+8258461 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8258461 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8258469 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+8335398 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8335398 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8335403 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+8378526 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8378526 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8378533 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+8381980 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+8381980 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 1(Integer)
+8381987 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+8382005 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 1 
+8382006 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+8382013 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+8431463 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+8431463 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 1(Integer)
+8431468 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+8431504 [http-nio-9999-exec-6] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 1 
+8431505 [http-nio-9999-exec-6] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+8431512 [http-nio-9999-exec-6] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+8432109 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8432110 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8432114 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+8434887 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8434887 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8434895 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+8437210 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8437210 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8437216 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+8454320 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8454321 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8454326 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+8498993 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8498993 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8499001 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+8660301 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8660301 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8660321 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+8662036 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8662036 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8662041 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+8664039 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8664040 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8664045 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+8665704 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8665704 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8665710 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+8847247 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8847248 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8847254 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+8847541 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8847541 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8847546 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+8907309 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8907309 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8907315 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+9006921 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+9006921 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+9006926 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+9050022 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+9050022 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+9050028 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+9290903 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+9290904 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+9290908 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+9646448 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+9646448 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 나윤주먹밥(String), 2020 - 3 - 31(String), 주문내역확인(String), (String), 나윤주먹밥입니다...(String), 술한잔했습니다.....
+장사가 잘 안돼도 좋습니다...(String), false(Boolean), false(Boolean)
+9646453 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+9648074 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+9648075 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+9648082 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+9650427 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+9650427 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+9650433 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+9658172 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+9658172 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+9658178 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+9667291 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+9667291 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 1(Integer)
+9667304 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+9667324 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 1 
+9667324 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+9667337 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+9676095 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+9676095 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+9676103 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+9748899 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+9748899 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+9748904 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+9749732 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+9749732 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 1(Integer)
+9749737 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+9749751 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 1 
+9749751 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+9749758 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+9771561 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+9771561 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 1(Integer)
+9771566 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+9771581 [http-nio-9999-exec-5] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 1 
+9771581 [http-nio-9999-exec-5] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+9771587 [http-nio-9999-exec-5] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+10902283 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+10902283 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+10902291 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+11759715 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+11759715 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+11759722 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+11768807 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+11768807 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+11768819 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+12451622 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+12451623 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+12451628 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+12455270 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+12455270 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+12455276 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+12460025 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+12460025 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+12460031 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+12461669 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+12461669 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+12461681 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+12465840 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+12465841 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+12465846 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+12545707 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+12545708 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+12545712 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+12557682 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+12557682 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+12557691 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+12671283 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+12671284 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+12671289 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+12682215 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+12682216 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 12(Integer)
+12682221 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+12682243 [http-nio-9999-exec-6] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 12 
+12682243 [http-nio-9999-exec-6] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+12682247 [http-nio-9999-exec-6] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+12722449 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+12722449 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+12722450 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.update - ==>  Preparing: update Question set territory=?, title=?, description=? where postId=? 
+12722450 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.update - ==> Parameters: 주문내역확인(String), 나윤주먹밥입니다...(String), 술한잔했습니다.....장사가 잘 안돼도 좋습니다... - 수정가능(String), 12(Integer)
+12722454 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+12722456 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.update - <==    Updates: 1
+12730529 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+12730529 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+12730539 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+13343946 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+13343946 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+13343953 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+13536432 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+13536432 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+13536438 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+13878711 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+13878712 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+13878718 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+14087804 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+14087804 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+14087812 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+14087838 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+14087838 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+14087845 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+14621470 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+14621470 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+14621476 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+14688009 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+14688009 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+14688015 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+14690246 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+14690246 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+14690258 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+14729796 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+14729797 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+14729802 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+15358164 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+15358164 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+15358169 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+15525870 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+15525870 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+15525875 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+15701668 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+15701668 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+15701668 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+15812616 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+15812616 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+15812641 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+15812663 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+15812663 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+15812666 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+15817439 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+15817439 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+15817446 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+15855435 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+15855435 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+15855440 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+15874018 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+15874018 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+15874022 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+15888405 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+15888405 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+15888411 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+15894990 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+15894991 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+15894998 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+15897160 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+15897160 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+15897168 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+15912527 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+15912527 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+15912538 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+15916173 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+15916173 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+15916182 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+16182394 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+16182394 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+16182399 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+16206490 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+16206490 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+16206496 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+16244537 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+16244537 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+16244544 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+16244631 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+16244631 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+16244636 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+16271854 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+16271854 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+16271862 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+16323587 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+16323587 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+16323595 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+16879312 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+16879312 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+16879321 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+16879560 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+16879560 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+16879566 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4

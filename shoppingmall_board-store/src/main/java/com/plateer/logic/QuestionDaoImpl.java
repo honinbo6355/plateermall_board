@@ -6,7 +6,6 @@ import com.plateer.mapper.QuestionMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Repository
@@ -16,9 +15,10 @@ public class QuestionDaoImpl implements QuestionDao {
     private QuestionMapper questionMapper;
 
     @Override
-    public void save(Question question) {
+    public int save(Question question) {
 
         this.questionMapper.insert(question);
+        return question.getPostId();
     }
 
     @Override

@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface QuestionService {
 
-    void createQuestion(Question question);
+    int createQuestion(Question question);
 
     List<Question> findAllQuestions();
 

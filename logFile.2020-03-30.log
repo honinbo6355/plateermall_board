@@ -1,0 +1,493 @@
+1390 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 8576 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+1398 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+1399 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+6535 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 5.762 seconds (JVM running for 9.141)
+6539 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+1194 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 2296 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+1195 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+1196 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+6051 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 5.322 seconds (JVM running for 6.98)
+6055 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+23140 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+23154 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 로그인한 사용자 정보(String), 2020 - 3 - 30(String), L.POINT(String), (String), 아~ 되나요(String), 되나요(String), false(Boolean), false(Boolean)
+23163 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+24333 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+24333 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+24362 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+30288 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+30288 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+30313 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+2002850 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2002852 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 로그인한 사용자 정보(String), 2020 - 3 - 30(String), 주문내역확인(String), (String), 신기하게도 오늘은 됩니다...(String), 정말신기하죠...(String), false(Boolean), false(Boolean)
+2002860 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+2004653 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+2004653 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+2004674 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 6
+2015060 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+2015061 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 2137(Integer)
+2015070 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+2015118 [http-nio-9999-exec-3] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 2137 
+2015119 [http-nio-9999-exec-3] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+2015125 [http-nio-9999-exec-3] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+2017939 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+2017940 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+2017946 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 6
+2020337 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+2020339 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 2137(Integer)
+2020346 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+2020360 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 2137 
+2020360 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+2020365 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+2024554 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+2024554 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+2024560 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 6
+2026646 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+2026646 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 2138(Integer)
+2026654 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+2026668 [http-nio-9999-exec-1] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 2138 
+2026669 [http-nio-9999-exec-1] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+2026678 [http-nio-9999-exec-1] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+2031093 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.delete - ==>  Preparing: delete from Question where postId = ? 
+2031093 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.delete - ==> Parameters: 2138(Integer)
+2031095 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+2031095 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+2031101 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.delete - <==    Updates: 1
+2031105 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+2044799 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+2044800 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+2044821 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+2076777 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+2076778 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 2139(Integer)
+2076785 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+2076796 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 2139 
+2076797 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+2076802 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+2079743 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+2079743 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+2079752 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+2221162 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+2221162 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+2221177 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+2246489 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+2246489 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+2246496 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+2247505 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+2247506 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+2247521 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+2297751 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+2297751 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+2297758 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+2315958 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+2315959 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+2315970 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+2350094 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+2350094 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+2350100 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+2364130 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+2364130 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+2364136 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+2382434 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+2382434 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+2382452 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+2386984 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+2386985 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+2386991 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+2507813 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+2507814 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+2507825 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+2585797 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+2585797 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+2585803 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+2659711 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+2659711 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+2659718 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+2677971 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+2677972 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+2677980 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+2715335 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+2715335 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+2715348 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+2733184 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+2733184 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+2733191 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+2785847 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+2785848 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+2785893 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+2812903 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+2812904 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 3(Integer)
+2812910 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+2812933 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 3 
+2812933 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+2812940 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+2838957 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+2838957 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+2838972 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+2952233 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+2952233 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+2952242 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+2955780 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+2955780 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 2(Integer)
+2955785 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+2955802 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 2 
+2955802 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+2955810 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+2963641 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+2963641 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+2963655 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+3004173 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3004174 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3004185 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+3005923 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+3005924 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 2137(Integer)
+3005932 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+3005946 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 2137 
+3005946 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+3005957 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+3999203 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3999203 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3999209 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+5746014 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+5746015 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+5746023 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+5749528 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+5749528 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+5749537 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+6306089 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+6306089 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+6306095 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+6539385 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+6539385 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+6539394 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+6539427 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+6539428 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+6539438 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+6539597 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+6539597 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+6539609 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+6539685 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+6539685 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+6539691 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+6539782 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+6539782 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+6539789 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+6566433 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+6566433 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+6566446 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+6574784 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+6574784 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+6575022 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+6604397 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+6604397 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+6604403 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+6619432 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+6619432 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+6619438 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+8061495 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8061496 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8061505 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+8074836 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8074836 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8074844 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+8095153 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8095154 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8095162 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+8108752 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+8108754 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 로그인한 사용자 정보(String), 2020 - 3 - 30(String), 배송확인(String), (String), 과연 오류가 있을까요..(String), 아니요 없습니다.(String), false(Boolean), false(Boolean)
+8108762 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+8109639 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8109639 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8109652 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 6
+8111215 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+8111216 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 2140(Integer)
+8111223 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+8111233 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 2140 
+8111234 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+8111240 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+8158902 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8158902 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8158906 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.update - ==>  Preparing: update Question set territory=?, title=?, description=? where postId=? 
+8158906 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.update - ==> Parameters: 배송확인(String), 과연 오류가 있을까요..(String), 아니요 없습니다. - 한번 수정했습니다.(String), 2140(Integer)
+8158912 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 6
+8158916 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.update - <==    Updates: 1
+8160959 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+8160960 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 2140(Integer)
+8160966 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+8160975 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 2140 
+8160975 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+8160984 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+8168647 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8168648 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8168657 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 6
+8169842 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+8169842 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 1(Integer)
+8169847 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+8169857 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 1 
+8169858 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+8169864 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+8181909 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8181909 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8181917 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 6
+8183375 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+8183375 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 1(Integer)
+8183390 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+8183414 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 1 
+8183414 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+8183429 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+8364995 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+8364996 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 1(Integer)
+8365053 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+8365057 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+8365057 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 1(Integer)
+8365066 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+8365069 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 1 
+8365069 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+8365082 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+8365100 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 1 
+8365101 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+8365111 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+8373279 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8373280 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8373289 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 6
+8374767 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+8374768 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 3(Integer)
+8374775 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+8374789 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 3 
+8374790 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+8374795 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+8379090 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8379090 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8379099 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 6
+8380570 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+8380570 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 2137(Integer)
+8380576 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+8380586 [http-nio-9999-exec-6] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 2137 
+8380587 [http-nio-9999-exec-6] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+8380593 [http-nio-9999-exec-6] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+8391540 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.update - ==>  Preparing: update Question set territory=?, title=?, description=? where postId=? 
+8391540 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.update - ==> Parameters: 배송확인(String), 오늘 회식 몇시인가요? 호호(String), 도대체 몇시냐고요 !! 버럭!! - 수정(String), 2137(Integer)
+8391544 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8391544 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8391548 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.update - <==    Updates: 1
+8391552 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 6
+8413962 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8413962 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8413984 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 6
+8425012 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+8425012 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 2140(Integer)
+8425018 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+8425033 [http-nio-9999-exec-3] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 2140 
+8425034 [http-nio-9999-exec-3] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+8425039 [http-nio-9999-exec-3] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+8438125 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.update - ==>  Preparing: update Question set territory=?, title=?, description=? where postId=? 
+8438125 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.update - ==> Parameters: 배송확인(String), 과연 오류가 있을까요..(String), 아니요 없습니다. - 한번 수정했습니다. - 한번더 수정했습니다.(String), 2140(Integer)
+8438131 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8438131 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8438135 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.update - <==    Updates: 1
+8438144 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 6
+8440845 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+8440845 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 2140(Integer)
+8440860 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+8440886 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 2140 
+8440886 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+8440903 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+8455471 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8455471 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8455479 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 6
+8457320 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+8457320 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 3(Integer)
+8457326 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+8457341 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 3 
+8457342 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+8457349 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+8462113 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.delete - ==>  Preparing: delete from Question where postId = ? 
+8462113 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.delete - ==> Parameters: 3(Integer)
+8462114 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8462114 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8462119 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.delete - <==    Updates: 1
+8462120 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+8558222 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8558222 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8558229 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+8559301 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+8559301 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 2137(Integer)
+8559306 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+8559321 [http-nio-9999-exec-1] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 2137 
+8559321 [http-nio-9999-exec-1] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+8559327 [http-nio-9999-exec-1] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+8564173 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8564173 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.delete - ==>  Preparing: delete from Question where postId = ? 
+8564173 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8564173 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.delete - ==> Parameters: 2137(Integer)
+8564179 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.delete - <==    Updates: 1
+8564181 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+8572835 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+8572836 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 1(Integer)
+8572847 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+8572861 [http-nio-9999-exec-5] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 1 
+8572861 [http-nio-9999-exec-5] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+8572873 [http-nio-9999-exec-5] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+8575572 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8575572 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8575587 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+8577126 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+8577127 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 2(Integer)
+8577143 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+8577155 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 2 
+8577155 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+8577166 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+8580384 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8580384 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8580394 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+8581830 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+8581830 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 2139(Integer)
+8581839 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+8581850 [http-nio-9999-exec-3] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 2139 
+8581851 [http-nio-9999-exec-3] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+8581861 [http-nio-9999-exec-3] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+8587330 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8587330 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8587337 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+8588858 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+8588858 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 2140(Integer)
+8588866 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+8588884 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 2140 
+8588884 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+8588892 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+8591663 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.delete - ==>  Preparing: delete from Question where postId = ? 
+8591663 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.delete - ==> Parameters: 2140(Integer)
+8591669 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.delete - <==    Updates: 1
+8651809 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8651809 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8651816 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+8716313 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8716313 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8716322 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+8716343 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8716343 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8716351 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+8716412 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8716412 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8716433 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+8737800 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8737800 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8737808 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+8748367 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8748367 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8748375 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+8798435 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8798435 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8798445 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+8826539 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8826540 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8826546 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+8851906 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8851906 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8851918 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+14478815 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+14478816 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+14478825 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+14916921 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+14916922 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+14916933 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 3
+15004017 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+15004017 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 로그인한 사용자 정보(String), 2020 - 3 - 30(String), 반품접수(String), (String), 참 신기한 일이지요...(String), 과연 집에서도 될까요(String), false(Boolean), false(Boolean)
+15004025 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+15005341 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+15005341 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+15005348 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+15009658 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+15009658 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+15009665 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+15014150 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+15014150 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 2141(Integer)
+15014157 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+15014170 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 2141 
+15014170 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+15014177 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+15023451 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+15023451 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+15023453 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.update - ==>  Preparing: update Question set territory=?, title=?, description=? where postId=? 
+15023453 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.update - ==> Parameters: 반품접수(String), 참 신기한 일이지요...(String), 과연 집에서도 될까요 - 수정(String), 2141(Integer)
+15023459 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+15023461 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.update - <==    Updates: 1
+15064162 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+15064162 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+15064170 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+15259236 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+15259237 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+15259250 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+15592792 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+15592792 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+15592800 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+15592806 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+15592807 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+15592814 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+15932547 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+15932548 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+15932554 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+15946072 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+15946072 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+15946082 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+16354796 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+16354796 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+16354804 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+16414425 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+16414425 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+16414435 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+16446624 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+16446624 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+16446630 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+25963533 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+25963534 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+25963541 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+26159060 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 2296 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+26159102 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+26159102 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+3655 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 16092 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+3658 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+3659 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+26168626 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 9.687 seconds (JVM running for 26168.167)
+26168629 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+7982 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9999 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9999 or configure this application to listen on another port.
+
+1340 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 12148 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+1350 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+1357 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+4231 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 3.525 seconds (JVM running for 5.232)
+4233 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+49954 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+49968 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+49986 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 4
+66169 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+66170 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 로그인한 사용자 정보(String), 2020 - 3 - 30(String), 배송확인(String), (String), ... 아침으로 롤백하다.....(String), 아침으로 롤백했습니다..(String), false(Boolean), false(Boolean)
+66177 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+67320 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+67320 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+67330 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+69094 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+69095 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+69102 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+76497 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+76497 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+76508 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+379117 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+379118 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+379124 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+381462 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+381462 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+381469 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5
+1796589 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+1796589 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+1796601 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 5

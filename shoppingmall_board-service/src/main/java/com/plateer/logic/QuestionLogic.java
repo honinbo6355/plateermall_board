@@ -17,10 +17,10 @@ public class QuestionLogic implements QuestionService
     }
 
     @Override
-    public void createQuestion(Question question) {
+    public int createQuestion(Question question) {
 
 //        question.setPostId(UUID.randomUUID().toString());
-        questionDao.save(question);
+        return questionDao.save(question);
     }
 
     @Override

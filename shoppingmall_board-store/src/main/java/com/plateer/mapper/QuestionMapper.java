@@ -8,7 +8,7 @@ import java.util.List;
 @Mapper
 public interface QuestionMapper {
 
-    void insert(Question question);
+    int insert(Question question);
 
     Question select(int postId);
 
