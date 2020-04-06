@@ -15,10 +15,9 @@ public class QuestionDaoImpl implements QuestionDao {
     private QuestionMapper questionMapper;
 
     @Override
-    public int save(Question question) {
+    public void save(Question question) {
 
         this.questionMapper.insert(question);
-        return question.getPostId();
     }
 
     @Override
@@ -30,7 +29,7 @@ public class QuestionDaoImpl implements QuestionDao {
     @Override
     public List<Question> findByUserName(String userName) {
 
-        System.out.println("DAOImple : " + userName);
+//        System.out.println("DAOImple : " + userName);
         return this.questionMapper.selectByUserName(userName);
     }
 
@@ -52,5 +51,14 @@ public class QuestionDaoImpl implements QuestionDao {
     public void delete(int postId) {
 
         this.questionMapper.delete(postId);
+    }
+
+    @Override
+    public int getRecentQuestion() {
+
+        System.out.println("들어옴 DAOImpl");
+        int num = this.questionMapper.getRecentQuestion();
+        System.out.println("num : " + num);
+        return num;
     }
 }

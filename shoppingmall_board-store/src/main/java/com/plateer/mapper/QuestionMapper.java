@@ -8,7 +8,7 @@ import java.util.List;
 @Mapper
 public interface QuestionMapper {
 
-    int insert(Question question);
+    void insert(Question question);
 
     Question select(int postId);
 
@@ -20,4 +20,5 @@ public interface QuestionMapper {
 
     List<Question> selectByUserName(String userName);
 
+    int getRecentQuestion();
 }

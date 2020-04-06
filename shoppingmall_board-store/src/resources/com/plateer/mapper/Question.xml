@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.plateer.mapper.QuestionMapper">
 
-    <insert id="insert" parameterType="com.plateer.domain.dto.Question" useGeneratedKeys="true" keyProperty="postId">
+    <insert id="insert" parameterType="com.plateer.domain.dto.Question">
         insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm)
         values (#{state}, #{writer}, #{date}, #{territory}, #{goodsCode}, #{title}, #{description}, #{smsAlarm}, #{emailAlarm})
     </insert>
@@ -16,6 +16,10 @@
 
     <select id="selectAll" resultType="com.plateer.domain.dto.Question">
         select * from Question
+    </select>
+
+    <select id="getRecentQuestion" resultType="Integer">
+        select max(postId) from Question
     </select>
 
     <select id="selectByUserName" parameterType="String" resultType="com.plateer.domain.dto.Question">

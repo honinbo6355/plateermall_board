@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface QuestionService {
 
-    int createQuestion(Question question);
+    void createQuestion(Question question);
 
     List<Question> findAllQuestions();
 
@@ -19,4 +19,5 @@ public interface QuestionService {
 
     void deleteQuestion(int postId);
 
+    int getRecentQuestion();
 }

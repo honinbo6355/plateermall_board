@@ -39,6 +39,12 @@ public class BoardController {
 		return questionService.findByUserName(userName);
 	}
 
+	@GetMapping("question/recent")
+	public int getRecentQuestion() {
+		System.out.println("들어옴 Controller");
+		return questionService.getRecentQuestion();
+	}
+
 	@GetMapping("question/detail/{postId}")
 	public Question getQuestion(@PathVariable int postId) {
 
@@ -52,9 +58,9 @@ public class BoardController {
 	}
 
 	@PostMapping("question/registration/")
-	public int questionRegistration(@RequestBody Question question) {
+	public void questionRegistration(@RequestBody Question question) {
 
-		return questionService.createQuestion(question);
+		questionService.createQuestion(question);
 	}
 
 	@DeleteMapping("question/delete/{postId}")

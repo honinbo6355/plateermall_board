@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface QuestionDao {
 
-    int save(Question question);
+    void save(Question question);
 
     List<Question> findAll();
 
@@ -17,4 +17,6 @@ public interface QuestionDao {
     void update(Question question);
 
     void delete(int postId);
+
+    int getRecentQuestion();
 }

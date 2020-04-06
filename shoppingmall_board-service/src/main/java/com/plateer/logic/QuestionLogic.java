@@ -17,10 +17,10 @@ public class QuestionLogic implements QuestionService
     }
 
     @Override
-    public int createQuestion(Question question) {
+    public void createQuestion(Question question) {
 
 //        question.setPostId(UUID.randomUUID().toString());
-        return questionDao.save(question);
+        questionDao.save(question);
     }
 
     @Override
@@ -32,7 +32,6 @@ public class QuestionLogic implements QuestionService
     @Override
     public List<Question> findByUserName(String userName) {
 
-        System.out.println("Logic : " + userName);
         return questionDao.findByUserName(userName);
     }
 
@@ -52,5 +51,12 @@ public class QuestionLogic implements QuestionService
     public void deleteQuestion(int postId) {
 
         questionDao.delete(postId);
+    }
+
+    @Override
+    public int getRecentQuestion() {
+
+        System.out.println("들어옴 Logic");
+        return questionDao.getRecentQuestion();
     }
 }
