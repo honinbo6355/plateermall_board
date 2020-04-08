@@ -3,6 +3,8 @@ package com.plateer.logic;
 import com.plateer.QuestionDao;
 import com.plateer.QuestionService;
 import com.plateer.domain.dto.Question;
+import com.plateer.domain.dto.Search;
+
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -58,4 +60,10 @@ public class QuestionLogic implements QuestionService
 
         return questionDao.getRecentQuestion();
     }
+
+	@Override
+	public List<Question> searchQuestion(Search search) {
+		
+		return questionDao.search(search);
+	}
 }

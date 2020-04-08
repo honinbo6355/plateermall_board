@@ -1,6 +1,7 @@
 package com.plateer;
 
 import com.plateer.domain.dto.Question;
+import com.plateer.domain.dto.Search;
 
 import java.util.List;
 
@@ -19,4 +20,6 @@ public interface QuestionDao {
     void delete(int postId);
 
     int getRecentQuestion();
+
+	List<Question> search(Search search);
 }

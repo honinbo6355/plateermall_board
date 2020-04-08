@@ -2,6 +2,7 @@ package com.plateer.logic;
 
 import com.plateer.QuestionDao;
 import com.plateer.domain.dto.Question;
+import com.plateer.domain.dto.Search;
 import com.plateer.mapper.QuestionMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -58,4 +59,10 @@ public class QuestionDaoImpl implements QuestionDao {
 
         return this.questionMapper.getRecentQuestion();
     }
+
+	@Override
+	public List<Question> search(Search search) {
+		
+		return this.questionMapper.search(search);
+	}
 }

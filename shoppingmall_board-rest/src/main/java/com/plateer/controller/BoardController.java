@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 import com.plateer.domain.dto.Answer;
 import com.plateer.domain.dto.Question;
+import com.plateer.domain.dto.Search;
 
 @RestController
 @CrossOrigin(allowCredentials = "true", origins = {"*"}, methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.DELETE, RequestMethod.PUT},
@@ -64,7 +65,6 @@ public class BoardController {
 	@PostMapping("question/registration/")
 	public void questionRegistration(@RequestBody Question question) {
 
-		System.out.println(question.getGoodsTitle());
 		questionService.createQuestion(question);
 	}
 
@@ -78,6 +78,13 @@ public class BoardController {
 	public void questionUpdate(@RequestBody Question question) {
 
 		questionService.updateQuestion(question);
+	}
+	
+	@PostMapping("question/search/")
+	public List<Question> searchQuestion(@RequestBody Search search) {
+		
+		System.out.println("search Controller");
+		return questionService.searchQuestion(search);
 	}
 
 	@GetMapping("upload/")

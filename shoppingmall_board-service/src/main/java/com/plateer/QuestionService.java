@@ -1,9 +1,9 @@
 package com.plateer;
 
-import com.plateer.domain.dto.Question;
-import org.springframework.stereotype.Service;
-
 import java.util.List;
+
+import com.plateer.domain.dto.Question;
+import com.plateer.domain.dto.Search;
 
 public interface QuestionService {
 
@@ -20,4 +20,6 @@ public interface QuestionService {
     void deleteQuestion(int postId);
 
     int getRecentQuestion();
+
+	List<Question> searchQuestion(Search search);
 }

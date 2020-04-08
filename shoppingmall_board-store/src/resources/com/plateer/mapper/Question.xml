@@ -4,37 +4,70 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.plateer.mapper.QuestionMapper">
 
-    <insert id="insert" parameterType="com.plateer.domain.dto.Question">
-        insert into Question (state, writer, date, territory, goodsTitle, orderId, title, description, smsAlarm, emailAlarm)
-        values (#{state}, #{writer}, #{date}, #{territory}, #{goodsTitle}, #{orderId}, #{title}, #{description}, #{smsAlarm}, #{emailAlarm})
-    </insert>
+	<insert id="insert"
+		parameterType="com.plateer.domain.dto.Question">
+		insert into Question (state, writer, date, territory, goodsTitle, orderId,
+		title, description, smsAlarm, emailAlarm)
+		values (#{state}, #{writer}, #{date}, #{territory}, #{goodsTitle},
+		#{orderId}, #{title}, #{description}, #{smsAlarm}, #{emailAlarm})
+	</insert>
 
-    <select id="select" parameterType="Integer" resultType="com.plateer.domain.dto.Question">
-        select * from Question
-        where postId = #{postId}
-    </select>
+	<select id="select" parameterType="Integer"
+		resultType="com.plateer.domain.dto.Question">
+		select * from Question
+		where postId = #{postId}
+	</select>
 
-    <select id="selectAll" resultType="com.plateer.domain.dto.Question">
-        select * from Question
-    </select>
+	<select id="selectAll"
+		resultType="com.plateer.domain.dto.Question">
+		select * from Question
+	</select>
 
-    <select id="getRecentQuestion" resultType="Integer">
-        select max(postId) from Question
-    </select>
+	<select id="getRecentQuestion" resultType="Integer">
+		select max(postId) from Question
+	</select>
 
-    <select id="selectByUserName" parameterType="String" resultType="com.plateer.domain.dto.Question">
-        select * from Question
-        where writer = #{userName}
-    </select>
+	<select id="selectByUserName" parameterType="String"
+		resultType="com.plateer.domain.dto.Question">
+		select * from Question
+		where writer = #{userName}
+	</select>
 
-    <update id="update" parameterType="com.plateer.domain.dto.Question">
+	<update id="update"
+		parameterType="com.plateer.domain.dto.Question">
 		update Question
-		set territory=#{territory}, title=#{title}, description=#{description}
-		where postId=#{postId}		
-    </update>
+		set territory=#{territory},
+		title=#{title}, description=#{description}
+		where postId=#{postId}
+	</update>
 
-    <delete id="delete" parameterType="Integer">
-        delete from Question
-        where postId = #{postId}
-    </delete>
+	<delete id="delete" parameterType="Integer">
+		delete from Question
+		where postId = #{postId}
+	</delete>
+
+	<select id="search" parameterType="com.plateer.domain.dto.Search" resultType="com.plateer.domain.dto.Question">
+		select * from Question
+		where
+		<if test="searchType != null">
+			<if test="searchType == '제목'.toString()">
+				title like CONCAT('%', #{keyword}, '%')
+			</if>
+			<if test="searchType == '내용'.toString()">
+				description like CONCAT('%', #{keyword}, '%')
+			</if>
+			<if test="searchType == '작성자'.toString()">
+				writer like CONCAT('%', #{keyword}, '%')
+			</if>
+			<if test="searchType == '제목+내용'.toString()">
+				(title like CONCAT('%', #{keyword}, '%')
+				or description like CONCAT('%', #{keyword}, '%'))
+			</if>
+			<if test="searchType == '전체조건'.toString()">
+				(title like CONCAT('%', #{keyword}, '%')
+				or description like CONCAT('%', #{keyword}, '%')
+				or writer like CONCAT('%', #{keyword}, '%'))
+			</if>
+		</if>
+	</select>
 </mapper>
