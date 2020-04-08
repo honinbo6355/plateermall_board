@@ -5,8 +5,8 @@
 <mapper namespace="com.plateer.mapper.QuestionMapper">
 
     <insert id="insert" parameterType="com.plateer.domain.dto.Question">
-        insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm)
-        values (#{state}, #{writer}, #{date}, #{territory}, #{goodsCode}, #{title}, #{description}, #{smsAlarm}, #{emailAlarm})
+        insert into Question (state, writer, date, territory, goodsTitle, orderId, title, description, smsAlarm, emailAlarm)
+        values (#{state}, #{writer}, #{date}, #{territory}, #{goodsTitle}, #{orderId}, #{title}, #{description}, #{smsAlarm}, #{emailAlarm})
     </insert>
 
     <select id="select" parameterType="Integer" resultType="com.plateer.domain.dto.Question">

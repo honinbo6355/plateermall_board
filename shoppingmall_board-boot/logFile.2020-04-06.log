@@ -1,0 +1,14 @@
+848  [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 6572 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+857  [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+857  [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+4094 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 3.669 seconds (JVM running for 4.843)
+4097 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+24625 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+24638 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+24671 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 15
+36105 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+36108 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 나윤주먹밥(String), 2020 - 4 - 6(String), 배송확인(String), (String), agag(String), agag(String), false(Boolean), false(Boolean)
+36114 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+36124 [http-nio-9999-exec-4] DEBUG c.p.m.Q.getRecentQuestion - ==>  Preparing: select max(postId) from Question 
+36124 [http-nio-9999-exec-4] DEBUG c.p.m.Q.getRecentQuestion - ==> Parameters: 
+36130 [http-nio-9999-exec-4] DEBUG c.p.m.Q.getRecentQuestion - <==      Total: 1

@@ -1,9 +1,12 @@
 package com.plateer.controller;
 
+import java.io.File;
 import java.util.List;
 
 import com.plateer.AnswerService;
 import com.plateer.QuestionService;
+import com.plateer.S3Client;
+
 import org.apache.ibatis.annotations.Update;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,10 +23,13 @@ public class BoardController {
 
 	private QuestionService questionService;
 	private AnswerService answerService;
+	private S3Client s3Client;
 
-	public BoardController(QuestionService questionService, AnswerService answerService) {
+
+	public BoardController(QuestionService questionService, AnswerService answerService, S3Client s3Client) {
 		this.questionService = questionService;
 		this.answerService = answerService;
+		this.s3Client = s3Client;
 	}	
 
 	@GetMapping("question/list")
@@ -35,13 +41,11 @@ public class BoardController {
 	@GetMapping("question/list/{userName}")
 	public List<Question> getMyQuestionList(@PathVariable String userName) {
 
-		System.out.println("Contoller : " + userName);
 		return questionService.findByUserName(userName);
 	}
 
 	@GetMapping("question/recent")
 	public int getRecentQuestion() {
-		System.out.println("들어옴 Controller");
 		return questionService.getRecentQuestion();
 	}
 
@@ -60,6 +64,7 @@ public class BoardController {
 	@PostMapping("question/registration/")
 	public void questionRegistration(@RequestBody Question question) {
 
+		System.out.println(question.getGoodsTitle());
 		questionService.createQuestion(question);
 	}
 
@@ -73,5 +78,13 @@ public class BoardController {
 	public void questionUpdate(@RequestBody Question question) {
 
 		questionService.updateQuestion(question);
+	}
+
+	@GetMapping("upload/")
+	public void fileUpload() {
+
+		File file = new File("D:\\arm.jpg");
+		s3Client.fileUpload("arm.jpg", file);
+		
 	}
 }

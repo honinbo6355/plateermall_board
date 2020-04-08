@@ -56,9 +56,6 @@ public class QuestionDaoImpl implements QuestionDao {
     @Override
     public int getRecentQuestion() {
 
-        System.out.println("들어옴 DAOImpl");
-        int num = this.questionMapper.getRecentQuestion();
-        System.out.println("num : " + num);
-        return num;
+        return this.questionMapper.getRecentQuestion();
     }
 }

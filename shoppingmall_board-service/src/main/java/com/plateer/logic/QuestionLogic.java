@@ -56,7 +56,6 @@ public class QuestionLogic implements QuestionService
     @Override
     public int getRecentQuestion() {
 
-        System.out.println("들어옴 Logic");
         return questionDao.getRecentQuestion();
     }
 }

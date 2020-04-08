@@ -1,0 +1,751 @@
+1228 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 3132 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+1235 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+1236 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+5383 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 4.817 seconds (JVM running for 6.33)
+5387 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+15502205 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+15502233 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+15502260 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+15506740 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+15506741 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 36(Integer)
+15506747 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+15506828 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 36 
+15506829 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+15506836 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+15524763 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.update - ==>  Preparing: update Question set territory=?, title=?, description=? where postId=? 
+15524764 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.update - ==> Parameters: L.POINT(String), 나윤주의 주먹밥 세계(String), 는 매워요(String), 36(Integer)
+15524771 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.update - <==    Updates: 1
+15527343 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+15527343 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+15527373 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+15537253 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+15537253 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 16(Integer)
+15537259 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+15537276 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 16 
+15537277 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+15537291 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+15540842 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+15540842 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+15540850 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+15626682 [http-nio-9999-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.plateer.mapper.QuestionMapper.selectByUserName] with root cause
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.plateer.mapper.QuestionMapper.selectByUserName
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:53)
+	at org.apache.ibatis.binding.MapperProxy.lambda$cachedInvoker$0(MapperProxy.java:107)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1688)
+	at org.apache.ibatis.binding.MapperProxy.cachedInvoker(MapperProxy.java:94)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy80.selectByUserName(Unknown Source)
+	at com.plateer.logic.QuestionDaoImpl.findByUserName(QuestionDaoImpl.java:34)
+	at com.plateer.logic.QuestionDaoImpl$$FastClassBySpringCGLIB$$1ffbb644.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.plateer.logic.QuestionDaoImpl$$EnhancerBySpringCGLIB$$5753163c.findByUserName(<generated>)
+	at com.plateer.logic.QuestionLogic.findByUserName(QuestionLogic.java:36)
+	at com.plateer.controller.BoardController.getMyQuestionList(BoardController.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+16703271 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+16703273 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 나윤주먹밥(String), 2020 - 4 - 3(String), 주문내역확인(String), (String), ags(String), ags(String), false(Boolean), false(Boolean)
+16703285 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+16723353 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+16723353 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 나윤주먹밥(String), 2020 - 4 - 3(String), 배송확인(String), (String), ag(String), sg(String), false(Boolean), false(Boolean)
+16723359 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+16752982 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+16752984 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 나윤주먹밥(String), 2020 - 4 - 3(String), 배송확인(String), (String), asg(String), ggg(String), false(Boolean), false(Boolean)
+16752991 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+1262 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 7228 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+1265 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+1266 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+5724 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 5.162 seconds (JVM running for 6.612)
+5728 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+20852 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+20868 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 나윤주먹밥(String), 2020 - 4 - 3(String), 배송확인(String), (String), 먹밥(String), 버억(String), false(Boolean), false(Boolean)
+20913 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+1630 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 13052 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+1634 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+1634 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+5215 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 4.484 seconds (JVM running for 6.553)
+5218 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+1293 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 6832 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+1298 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+1299 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+4676 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 4.113 seconds (JVM running for 5.639)
+4678 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+594352 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+594373 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 나윤주먹밥(String), 2020 - 4 - 3(String), 배송확인(String), (String), asdf(String), sadf(String), false(Boolean), false(Boolean)
+594378 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+602269 [http-nio-9999-exec-4] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.plateer.mapper.QuestionMapper.selectByUserName] with root cause
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.plateer.mapper.QuestionMapper.selectByUserName
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:53)
+	at org.apache.ibatis.binding.MapperProxy.lambda$cachedInvoker$0(MapperProxy.java:107)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.apache.ibatis.binding.MapperProxy.cachedInvoker(MapperProxy.java:94)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy80.selectByUserName(Unknown Source)
+	at com.plateer.logic.QuestionDaoImpl.findByUserName(QuestionDaoImpl.java:34)
+	at com.plateer.logic.QuestionDaoImpl$$FastClassBySpringCGLIB$$1ffbb644.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.plateer.logic.QuestionDaoImpl$$EnhancerBySpringCGLIB$$6f8c0b53.findByUserName(<generated>)
+	at com.plateer.logic.QuestionLogic.findByUserName(QuestionLogic.java:37)
+	at com.plateer.controller.BoardController.getMyQuestionList(BoardController.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+603694 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+603694 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+603717 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 13
+636146 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+636146 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 나윤주먹밥(String), 2020 - 4 - 3(String), L.POINT(String), (String), ggg(String), ggg(String), false(Boolean), false(Boolean)
+636159 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+1150629 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+1150630 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+1150651 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 14
+1152308 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+1152310 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 1(Integer)
+1152316 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+1152360 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 1 
+1152360 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+1152365 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+1366 [background-preinit] DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+1501 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 1388 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+1502 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+1502 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+4678 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 4.04 seconds (JVM running for 5.604)
+4680 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+12356 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+12371 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 나윤주먹밥(String), 2020 - 4 - 3(String), L.POINT(String), (String), sag(String), ag(String), false(Boolean), false(Boolean)
+12377 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+1339 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 8088 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+1342 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+1342 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+4718 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 4.157 seconds (JVM running for 5.603)
+4721 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+17097 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+17112 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 나윤주먹밥(String), 2020 - 4 - 3(String), 배송확인(String), (String), agsgs(String), sgsgsgsg(String), false(Boolean), false(Boolean)
+17122 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+29535 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+29536 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 나윤주먹밥(String), 2020 - 4 - 3(String), L.POINT(String), (String), asgah(String), hhhh(String), false(Boolean), false(Boolean)
+29541 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+1275 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 7588 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+1278 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+1279 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+4874 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 4.346 seconds (JVM running for 5.76)
+4878 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+20534 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+20548 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 나윤주먹밥(String), 2020 - 4 - 3(String), 반품접수(String), (String), agagah(String), hhhh(String), false(Boolean), false(Boolean)
+20555 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+1347 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 7104 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+1351 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+1351 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+4639 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 4.141 seconds (JVM running for 5.579)
+4641 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+17398 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+17415 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 나윤주먹밥(String), 2020 - 4 - 3(String), L.POINT(String), (String), ag(String), ag(String), false(Boolean), false(Boolean)
+17422 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+1396 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 3564 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+1399 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+1400 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+5693 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 5.062 seconds (JVM running for 6.662)
+5697 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+30302 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+30316 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 나윤주먹밥(String), 2020 - 4 - 3(String), 배송확인(String), (String), agag(String), agag(String), false(Boolean), false(Boolean)
+30323 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+1632 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 14784 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+1636 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+1636 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+4910 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 4.248 seconds (JVM running for 5.829)
+4913 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+16383 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+16397 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 나윤주먹밥(String), 2020 - 4 - 3(String), L.POINT(String), (String), asg(String), ahh(String), false(Boolean), false(Boolean)
+16404 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+16422 [http-nio-9999-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.apache.ibatis.binding.BindingException: Mapper method 'com.plateer.mapper.QuestionMapper.insert' has an unsupported return type: class com.plateer.domain.dto.Question] with root cause
+org.apache.ibatis.binding.BindingException: Mapper method 'com.plateer.mapper.QuestionMapper.insert' has an unsupported return type: class com.plateer.domain.dto.Question
+	at org.apache.ibatis.binding.MapperMethod.rowCountResult(MapperMethod.java:118)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:144)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy80.insert(Unknown Source)
+	at com.plateer.logic.QuestionDaoImpl.save(QuestionDaoImpl.java:20)
+	at com.plateer.logic.QuestionDaoImpl$$FastClassBySpringCGLIB$$1ffbb644.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.plateer.logic.QuestionDaoImpl$$EnhancerBySpringCGLIB$$9d7515d.save(<generated>)
+	at com.plateer.logic.QuestionLogic.createQuestion(QuestionLogic.java:23)
+	at com.plateer.controller.BoardController.questionRegistration(BoardController.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+1335 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 12680 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+1338 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+1339 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+4522 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 4.006 seconds (JVM running for 5.306)
+4525 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+23797 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+23812 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 나윤주먹밥(String), 2020 - 4 - 3(String), 배송확인(String), (String), sag(String), ssg(String), false(Boolean), false(Boolean)
+23820 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+23833 [http-nio-9999-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.apache.ibatis.binding.BindingException: Mapper method 'com.plateer.mapper.QuestionMapper.insert' has an unsupported return type: class com.plateer.domain.dto.Question] with root cause
+org.apache.ibatis.binding.BindingException: Mapper method 'com.plateer.mapper.QuestionMapper.insert' has an unsupported return type: class com.plateer.domain.dto.Question
+	at org.apache.ibatis.binding.MapperMethod.rowCountResult(MapperMethod.java:118)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:144)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy80.insert(Unknown Source)
+	at com.plateer.logic.QuestionDaoImpl.save(QuestionDaoImpl.java:20)
+	at com.plateer.logic.QuestionDaoImpl$$FastClassBySpringCGLIB$$1ffbb644.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.plateer.logic.QuestionDaoImpl$$EnhancerBySpringCGLIB$$688f521f.save(<generated>)
+	at com.plateer.logic.QuestionLogic.createQuestion(QuestionLogic.java:23)
+	at com.plateer.controller.BoardController.questionRegistration(BoardController.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+30136 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+30136 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+30163 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 22
+32118 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+32120 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 50(Integer)
+32127 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+32174 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 50 
+32174 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+32179 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+53632 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+53632 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+53641 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 12
+1662 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 11628 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+1665 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+1666 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+5176 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 4.544 seconds (JVM running for 6.131)
+5179 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+11485 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+11506 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+11539 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 12
+21373 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+21374 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 나윤주먹밥(String), 2020 - 4 - 3(String), L.POINT(String), (String), ag(String), ag(String), false(Boolean), false(Boolean)
+21385 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+1388 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 10676 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+1391 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+1392 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+4420 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 3.759 seconds (JVM running for 5.524)
+4422 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+16027 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+16041 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 나윤주먹밥(String), 2020 - 4 - 3(String), L.POINT(String), (String), afgg(String), aggaga(String), false(Boolean), false(Boolean)
+16048 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+16061 [http-nio-9999-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.apache.ibatis.binding.BindingException: Mapper method 'com.plateer.mapper.QuestionMapper.insert' has an unsupported return type: class com.plateer.domain.dto.Question] with root cause
+org.apache.ibatis.binding.BindingException: Mapper method 'com.plateer.mapper.QuestionMapper.insert' has an unsupported return type: class com.plateer.domain.dto.Question
+	at org.apache.ibatis.binding.MapperMethod.rowCountResult(MapperMethod.java:118)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:144)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy80.insert(Unknown Source)
+	at com.plateer.logic.QuestionDaoImpl.save(QuestionDaoImpl.java:21)
+	at com.plateer.logic.QuestionDaoImpl$$FastClassBySpringCGLIB$$1ffbb644.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.plateer.logic.QuestionDaoImpl$$EnhancerBySpringCGLIB$$ea04bdf.save(<generated>)
+	at com.plateer.logic.QuestionLogic.createQuestion(QuestionLogic.java:23)
+	at com.plateer.controller.BoardController.questionRegistration(BoardController.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+1285 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 3000 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+1288 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+1289 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+4670 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 4.096 seconds (JVM running for 5.493)
+4673 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+19802 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+19816 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 나윤주먹밥(String), 2020 - 4 - 3(String), 주문내역확인(String), (String), ggg(String), ggg(String), false(Boolean), false(Boolean)
+19823 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+571712 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+571713 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 나윤주먹밥(String), 2020 - 4 - 3(String), 배송확인(String), (String), agag(String), agag(String), false(Boolean), false(Boolean)
+571718 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+766116 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+766117 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+766158 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 16
+1913 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 10540 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+1926 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+1927 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+5173 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 4.179 seconds (JVM running for 6.161)
+5176 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+16694 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+16709 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 나윤주먹밥(String), 2020 - 4 - 3(String), L.POINT(String), (String), ag(String), ag(String), false(Boolean), false(Boolean)
+16715 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+1395 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 3116 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+1399 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+1400 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+4818 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 4.261 seconds (JVM running for 5.781)
+4820 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+13249 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+13263 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 나윤주먹밥(String), 2020 - 4 - 3(String), 배송확인(String), (String), agsg(String), gsagd(String), false(Boolean), false(Boolean)
+13281 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+1566 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 3460 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+1570 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+1570 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+4965 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 4.331 seconds (JVM running for 5.766)
+4968 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+15149 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+15164 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 나윤주먹밥(String), 2020 - 4 - 3(String), 배송확인(String), (String), agag(String), gagag(String), false(Boolean), false(Boolean)
+15172 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+1450 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 4328 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+1455 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+1455 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+5354 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 4.694 seconds (JVM running for 6.182)
+5356 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+13788 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+13803 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 나윤주먹밥(String), 2020 - 4 - 3(String), L.POINT(String), (String), agag(String), agag(String), false(Boolean), false(Boolean)
+13811 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+1395 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 3564 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+1400 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+1403 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+4939 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 4.371 seconds (JVM running for 6.407)
+4942 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+24690 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+24704 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 나윤주먹밥(String), 2020 - 4 - 3(String), 배송확인(String), (String), ag(String), ag(String), false(Boolean), false(Boolean)
+24711 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+1641 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 8904 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+1644 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+1645 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+6290 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 5.484 seconds (JVM running for 7.305)
+6292 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+18779 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+18795 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 나윤주먹밥(String), 2020 - 4 - 3(String), 배송확인(String), (String), ag(String), ag(String), false(Boolean), false(Boolean)
+18801 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+1271 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 8760 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+1275 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+1276 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+4430 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 3.878 seconds (JVM running for 5.278)
+4433 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+17101 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+17115 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), (String), 2020 - 4 - 3(String), L.POINT(String), (String), ag(String), ag(String), false(Boolean), false(Boolean)
+17124 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+91663 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+91663 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), (String), 2020 - 4 - 3(String), L.POINT(String), (String), 123(String), 123(String), false(Boolean), false(Boolean)
+91669 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+94738 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+94738 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+94764 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 12
+1410 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 6480 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+1413 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+1414 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+4750 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 4.163 seconds (JVM running for 5.969)
+4755 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+63072 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+63086 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 나윤주먹밥(String), 2020 - 4 - 3(String), 반품접수(String), (String), sgsggs(String), gssgsgsg(String), false(Boolean), false(Boolean)
+63093 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+63110 [http-nio-9999-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.apache.ibatis.binding.BindingException: Mapper method 'com.plateer.mapper.QuestionMapper.insert' has an unsupported return type: class com.plateer.domain.dto.Question] with root cause
+org.apache.ibatis.binding.BindingException: Mapper method 'com.plateer.mapper.QuestionMapper.insert' has an unsupported return type: class com.plateer.domain.dto.Question
+	at org.apache.ibatis.binding.MapperMethod.rowCountResult(MapperMethod.java:118)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:144)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy80.insert(Unknown Source)
+	at com.plateer.logic.QuestionDaoImpl.save(QuestionDaoImpl.java:20)
+	at com.plateer.logic.QuestionDaoImpl$$FastClassBySpringCGLIB$$1ffbb644.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.plateer.logic.QuestionDaoImpl$$EnhancerBySpringCGLIB$$1acd34c0.save(<generated>)
+	at com.plateer.logic.QuestionLogic.createQuestion(QuestionLogic.java:23)
+	at com.plateer.controller.BoardController.questionRegistration(BoardController.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+1225 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 12784 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board)
+1228 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+1228 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+4324 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 3.812 seconds (JVM running for 5.118)
+4326 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+19035 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+19048 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 나윤주먹밥(String), 2020 - 4 - 3(String), L.POINT(String), (String), aga(String), agag(String), false(Boolean), false(Boolean)
+19055 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+19067 [http-nio-9999-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.apache.ibatis.binding.BindingException: Mapper method 'com.plateer.mapper.QuestionMapper.insert' has an unsupported return type: class com.plateer.domain.dto.Question] with root cause
+org.apache.ibatis.binding.BindingException: Mapper method 'com.plateer.mapper.QuestionMapper.insert' has an unsupported return type: class com.plateer.domain.dto.Question
+	at org.apache.ibatis.binding.MapperMethod.rowCountResult(MapperMethod.java:118)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:144)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy80.insert(Unknown Source)
+	at com.plateer.logic.QuestionDaoImpl.save(QuestionDaoImpl.java:21)
+	at com.plateer.logic.QuestionDaoImpl$$FastClassBySpringCGLIB$$1ffbb644.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.plateer.logic.QuestionDaoImpl$$EnhancerBySpringCGLIB$$960a5b30.save(<generated>)
+	at com.plateer.logic.QuestionLogic.createQuestion(QuestionLogic.java:23)
+	at com.plateer.controller.BoardController.questionRegistration(BoardController.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)

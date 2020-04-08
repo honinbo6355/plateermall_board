@@ -1,14 +1,1688 @@
-848  [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 6572 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
-857  [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
-857  [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
-4094 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 3.669 seconds (JVM running for 4.843)
-4097 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
-24625 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
-24638 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
-24671 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 15
-36105 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsCode, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
-36108 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 나윤주먹밥(String), 2020 - 4 - 6(String), 배송확인(String), (String), agag(String), agag(String), false(Boolean), false(Boolean)
-36114 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
-36124 [http-nio-9999-exec-4] DEBUG c.p.m.Q.getRecentQuestion - ==>  Preparing: select max(postId) from Question 
-36124 [http-nio-9999-exec-4] DEBUG c.p.m.Q.getRecentQuestion - ==> Parameters: 
-36130 [http-nio-9999-exec-4] DEBUG c.p.m.Q.getRecentQuestion - <==      Total: 1
+921  [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 15136 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+929  [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+930  [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+4121 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9999 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9999 or configure this application to listen on another port.
+
+788  [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 7276 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+790  [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+790  [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+3658 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 3.264 seconds (JVM running for 4.513)
+3661 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+46554 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsTitle, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+46572 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 나윤주먹밥(String), 2020 - 4 - 7(String), L.POINT(String), 7.5CM 토탈모션 페이턴트 슬링백 펌프스(String), ㅁㄴㅇㄹ(String), ㅁㄴㅇㄹ(String), false(Boolean), false(Boolean)
+46580 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+46611 [http-nio-9999-exec-2] DEBUG c.p.m.Q.getRecentQuestion - ==>  Preparing: select max(postId) from Question 
+46611 [http-nio-9999-exec-2] DEBUG c.p.m.Q.getRecentQuestion - ==> Parameters: 
+46632 [http-nio-9999-exec-2] DEBUG c.p.m.Q.getRecentQuestion - <==      Total: 1
+48020 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+48021 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 86(Integer)
+48038 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+48090 [http-nio-9999-exec-6] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 86 
+48090 [http-nio-9999-exec-6] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+48098 [http-nio-9999-exec-6] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+179024 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+179024 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 86(Integer)
+179039 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+179070 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 86 
+179070 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+179079 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+195153 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+195153 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 86(Integer)
+195159 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+195410 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 86 
+195410 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+195416 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+206927 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+206927 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 86(Integer)
+206940 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+206971 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 86 
+206971 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+206999 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+281443 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+281443 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 86(Integer)
+281451 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+281474 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 86 
+281475 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+281483 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+5243962 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+5243962 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 86(Integer)
+5243970 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+5244010 [http-nio-9999-exec-6] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 86 
+5244010 [http-nio-9999-exec-6] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+5244018 [http-nio-9999-exec-6] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+5353481 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+5353481 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 86(Integer)
+5353492 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+5353776 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 86 
+5353779 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+5353789 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+5358178 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+5358178 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+5358193 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+5359704 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+5359705 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 12(Integer)
+5359713 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+5359729 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 12 
+5359730 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+5359735 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+5361756 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+5361756 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+5361766 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+5363231 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+5363231 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 86(Integer)
+5363236 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+5363253 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 86 
+5363254 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+5363259 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+5364768 [http-nio-9999-exec-6] DEBUG c.p.m.Q.selectByUserName - ==>  Preparing: select * from Question where writer = ? 
+5364768 [http-nio-9999-exec-6] DEBUG c.p.m.Q.selectByUserName - ==> Parameters: 나윤주먹밥(String)
+5364773 [http-nio-9999-exec-6] DEBUG c.p.m.Q.selectByUserName - <==      Total: 4
+5367742 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+5367742 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 36(Integer)
+5367747 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+5367764 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 36 
+5367765 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+5367769 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+5375987 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsTitle, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+5375988 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 나윤주먹밥(String), 2020 - 4 - 7(String), 배송확인(String), (String), ㅁㄴㅇㄹㅎㅎ(String), ㅁㄴㅇㅀㅎ(String), false(Boolean), false(Boolean)
+5375997 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+5376005 [http-nio-9999-exec-4] DEBUG c.p.m.Q.getRecentQuestion - ==>  Preparing: select max(postId) from Question 
+5376005 [http-nio-9999-exec-4] DEBUG c.p.m.Q.getRecentQuestion - ==> Parameters: 
+5376010 [http-nio-9999-exec-4] DEBUG c.p.m.Q.getRecentQuestion - <==      Total: 1
+5377063 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+5377064 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 87(Integer)
+5377069 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+5377086 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 87 
+5377086 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+5377090 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+5415013 [http-nio-9999-exec-9] DEBUG c.p.m.Q.selectByUserName - ==>  Preparing: select * from Question where writer = ? 
+5415013 [http-nio-9999-exec-9] DEBUG c.p.m.Q.selectByUserName - ==> Parameters: 나윤주먹밥(String)
+5415019 [http-nio-9999-exec-9] DEBUG c.p.m.Q.selectByUserName - <==      Total: 5
+5416518 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+5416518 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 26(Integer)
+5416529 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+5416546 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 26 
+5416546 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+5416555 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+5423445 [http-nio-9999-exec-6] DEBUG c.p.m.Q.selectByUserName - ==>  Preparing: select * from Question where writer = ? 
+5423446 [http-nio-9999-exec-6] DEBUG c.p.m.Q.selectByUserName - ==> Parameters: 나윤주먹밥(String)
+5423453 [http-nio-9999-exec-6] DEBUG c.p.m.Q.selectByUserName - <==      Total: 5
+5424609 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+5424609 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 87(Integer)
+5424614 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+5424631 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 87 
+5424631 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+5424636 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+5440434 [http-nio-9999-exec-2] DEBUG c.p.m.Q.selectByUserName - ==>  Preparing: select * from Question where writer = ? 
+5440434 [http-nio-9999-exec-2] DEBUG c.p.m.Q.selectByUserName - ==> Parameters: 나윤주먹밥(String)
+5440441 [http-nio-9999-exec-2] DEBUG c.p.m.Q.selectByUserName - <==      Total: 5
+5443212 [http-nio-9999-exec-4] DEBUG c.p.m.Q.selectByUserName - ==>  Preparing: select * from Question where writer = ? 
+5443212 [http-nio-9999-exec-4] DEBUG c.p.m.Q.selectByUserName - ==> Parameters: 나윤주먹밥(String)
+5443218 [http-nio-9999-exec-4] DEBUG c.p.m.Q.selectByUserName - <==      Total: 5
+5444850 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+5444850 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 86(Integer)
+5444856 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+5444872 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 86 
+5444872 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+5444878 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+5446665 [http-nio-9999-exec-9] DEBUG c.p.m.Q.selectByUserName - ==>  Preparing: select * from Question where writer = ? 
+5446666 [http-nio-9999-exec-9] DEBUG c.p.m.Q.selectByUserName - ==> Parameters: 나윤주먹밥(String)
+5446674 [http-nio-9999-exec-9] DEBUG c.p.m.Q.selectByUserName - <==      Total: 5
+5448253 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+5448253 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 87(Integer)
+5448258 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+5448274 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 87 
+5448274 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+5448279 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+5467244 [http-nio-9999-exec-6] DEBUG c.p.m.Q.selectByUserName - ==>  Preparing: select * from Question where writer = ? 
+5467245 [http-nio-9999-exec-6] DEBUG c.p.m.Q.selectByUserName - ==> Parameters: 나윤주먹밥(String)
+5467323 [http-nio-9999-exec-6] DEBUG c.p.m.Q.selectByUserName - <==      Total: 5
+5470824 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+5470826 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 86(Integer)
+5470831 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+5470848 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 86 
+5470848 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+5470853 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+5475752 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.update - ==>  Preparing: update Question set territory=?, title=?, description=? where postId=? 
+5475752 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.update - ==> Parameters: L.POINT(String), ㅁㄴㅇㄹ(String), ㅁㄴㅇㄹ(String), 86(Integer)
+5475761 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.update - <==    Updates: 1
+5664932 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+5664932 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 86(Integer)
+5664939 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+5665223 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 86 
+5665223 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+5665230 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+5698376 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+5698377 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 86(Integer)
+5698389 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+5698414 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 86 
+5698415 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+5698419 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+5709712 [http-nio-9999-exec-3] DEBUG c.p.m.Q.selectByUserName - ==>  Preparing: select * from Question where writer = ? 
+5709712 [http-nio-9999-exec-3] DEBUG c.p.m.Q.selectByUserName - ==> Parameters: 나윤주먹밥(String)
+5709717 [http-nio-9999-exec-3] DEBUG c.p.m.Q.selectByUserName - <==      Total: 5
+5710823 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+5710823 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 86(Integer)
+5710829 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+5710848 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 86 
+5710848 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+5710852 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+5717584 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.update - ==>  Preparing: update Question set territory=?, title=?, description=? where postId=? 
+5717584 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.update - ==> Parameters: L.POINT(String), ㅁㄴㅇㄹ(String), ㅁㄴㅇㄹ(String), 86(Integer)
+5717589 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.update - <==    Updates: 1
+5734838 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+5734838 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 86(Integer)
+5734845 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+5734915 [http-nio-9999-exec-3] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 86 
+5734915 [http-nio-9999-exec-3] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+5734921 [http-nio-9999-exec-3] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+5750402 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+5750402 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 86(Integer)
+5750425 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+5750478 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 86 
+5750478 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+5750485 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+5870019 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsTitle, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+5870019 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 나윤주먹밥(String), 2020 - 4 - 7(String), L.POINT(String), 7.5CM 토탈모션 페이턴트 슬링백 펌프스(String), 토탈모션에 탈모밖에 안보입니다.(String), 불편하네요.(String), false(Boolean), false(Boolean)
+5870033 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+5870042 [http-nio-9999-exec-3] DEBUG c.p.m.Q.getRecentQuestion - ==>  Preparing: select max(postId) from Question 
+5870042 [http-nio-9999-exec-3] DEBUG c.p.m.Q.getRecentQuestion - ==> Parameters: 
+5870060 [http-nio-9999-exec-3] DEBUG c.p.m.Q.getRecentQuestion - <==      Total: 1
+5871196 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+5871196 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 88(Integer)
+5871204 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+5871219 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 88 
+5871219 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+5871223 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+5877216 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+5877217 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+5877225 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 13
+5894908 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+5894909 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 88(Integer)
+5894915 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+5894934 [http-nio-9999-exec-3] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 88 
+5894934 [http-nio-9999-exec-3] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+5894939 [http-nio-9999-exec-3] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+5929736 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+5929737 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 88(Integer)
+5929750 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+5929779 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 88 
+5929779 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+5929785 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+5938928 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+5938928 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+5938936 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 13
+5980308 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsTitle, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+5980308 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 나윤주먹밥(String), 2020 - 4 - 7(String), 주문내역확인(String), 척테일러1970S 로우 클래식 블랙 162058C(String), 나윤주의 주먹세계(String), 우미관(String), false(Boolean), false(Boolean)
+5980313 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+5980322 [http-nio-9999-exec-3] DEBUG c.p.m.Q.getRecentQuestion - ==>  Preparing: select max(postId) from Question 
+5980322 [http-nio-9999-exec-3] DEBUG c.p.m.Q.getRecentQuestion - ==> Parameters: 
+5980328 [http-nio-9999-exec-3] DEBUG c.p.m.Q.getRecentQuestion - <==      Total: 1
+5981401 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+5981401 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 89(Integer)
+5981407 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+5981423 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 89 
+5981423 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+5981429 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+6996269 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsTitle, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+6996269 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 나윤주먹밥(String), 2020 - 4 - 7(String), 반품접수(String), 2넥리본 밑단 프릴 플라워 원피스(SO3OP04)(String), 프릴(String), 리(String), false(Boolean), false(Boolean)
+6996278 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+6996289 [http-nio-9999-exec-3] DEBUG c.p.m.Q.getRecentQuestion - ==>  Preparing: select max(postId) from Question 
+6996289 [http-nio-9999-exec-3] DEBUG c.p.m.Q.getRecentQuestion - ==> Parameters: 
+6996295 [http-nio-9999-exec-3] DEBUG c.p.m.Q.getRecentQuestion - <==      Total: 1
+6997209 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+6997209 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 90(Integer)
+6997216 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+6997233 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 90 
+6997233 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+6997239 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+7000193 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+7000193 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+7000203 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 14
+7208056 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+7208057 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+7208068 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 14
+7484768 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+7484769 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+7484777 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 14
+7486699 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+7486699 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 90(Integer)
+7486706 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+7486725 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 90 
+7486726 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+7486732 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+7897926 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+7897926 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+7897933 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 14
+11803118 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 7276 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+11803120 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+11803120 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+11805742 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 2.796 seconds (JVM running for 11806.597)
+11805745 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+12058367 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 7276 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+12058367 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+12058368 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+12058781 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:184)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:144)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:236)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:706)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.plateer.BoardBootApplication.main(BoardBootApplication.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.plateer.config.AWSConfig] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@64f54a98]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:743)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:742)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:681)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:649)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1605)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:491)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:230)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:223)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:213)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:167)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:142)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 22 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/amazonaws/auth/AWSCredentials
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2729)
+	at java.lang.Class.getDeclaredMethods(Class.java:2003)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 38 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.amazonaws.auth.AWSCredentials
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:419)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:352)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:352)
+	... 42 common frames omitted
+12138559 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 7276 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+12138560 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+12138560 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+12139723 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:184)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:144)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:236)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:706)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.plateer.BoardBootApplication.main(BoardBootApplication.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.plateer.config.AWSConfig] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@6cb1d46d]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:743)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:742)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:681)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:649)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1605)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:491)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:230)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:223)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:213)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:167)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:142)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 22 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/amazonaws/auth/AWSCredentials
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2729)
+	at java.lang.Class.getDeclaredMethods(Class.java:2003)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 38 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.amazonaws.auth.AWSCredentials
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:419)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:352)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:352)
+	... 42 common frames omitted
+12186078 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 7276 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+12186078 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+12186078 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+12186508 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:184)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:144)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:236)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:706)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.plateer.BoardBootApplication.main(BoardBootApplication.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.plateer.config.AWSConfig] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@7c777397]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:743)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:742)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:681)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:649)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1605)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:491)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:230)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:223)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:213)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:167)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:142)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 22 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/amazonaws/auth/AWSCredentials
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2729)
+	at java.lang.Class.getDeclaredMethods(Class.java:2003)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 38 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.amazonaws.auth.AWSCredentials
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:419)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:352)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:352)
+	... 42 common frames omitted
+12265516 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 7276 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+12265517 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+12265517 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+12266242 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:184)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:144)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:236)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:706)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.plateer.BoardBootApplication.main(BoardBootApplication.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.plateer.config.AWSConfig] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@2d1a8917]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:743)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:742)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:681)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:649)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1605)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:491)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:230)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:223)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:213)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:167)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:142)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 22 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/amazonaws/auth/AWSCredentials
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2729)
+	at java.lang.Class.getDeclaredMethods(Class.java:2003)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 38 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.amazonaws.auth.AWSCredentials
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:419)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:352)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:352)
+	... 42 common frames omitted
+12273048 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 7276 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+12273049 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+12273049 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+12273454 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:184)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:144)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:236)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:706)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.plateer.BoardBootApplication.main(BoardBootApplication.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.plateer.config.AWSConfig] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@4a73b597]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:743)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:742)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:681)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:649)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1605)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:491)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:230)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:223)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:213)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:167)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:142)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 22 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/amazonaws/auth/AWSCredentials
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2729)
+	at java.lang.Class.getDeclaredMethods(Class.java:2003)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 38 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.amazonaws.auth.AWSCredentials
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:419)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:352)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:352)
+	... 42 common frames omitted
+12290829 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 7276 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+12290829 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+12290829 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+12291464 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:184)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:144)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:236)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:706)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.plateer.BoardBootApplication.main(BoardBootApplication.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.plateer.config.AWSConfig] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@25b63c2e]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:743)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:742)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:681)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:649)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1605)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:491)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:230)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:223)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:213)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:167)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:142)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 22 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/amazonaws/auth/AWSCredentials
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2729)
+	at java.lang.Class.getDeclaredMethods(Class.java:2003)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 38 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.amazonaws.auth.AWSCredentials
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:419)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:352)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:352)
+	... 42 common frames omitted
+12346551 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 7276 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+12346552 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+12346552 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+12346996 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:184)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:144)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:236)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:706)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.plateer.BoardBootApplication.main(BoardBootApplication.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.plateer.config.AWSConfig] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@e3c580a]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:743)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:742)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:681)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:649)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1605)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:491)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:230)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:223)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:213)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:167)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:142)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 22 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/amazonaws/auth/AWSCredentials
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2729)
+	at java.lang.Class.getDeclaredMethods(Class.java:2003)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 38 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.amazonaws.auth.AWSCredentials
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:419)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:352)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:352)
+	... 42 common frames omitted
+12390862 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 7276 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+12390863 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+12390863 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+12391239 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:184)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:144)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:236)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:706)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.plateer.BoardBootApplication.main(BoardBootApplication.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.plateer.config.AWSConfig] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@41e75ea5]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:743)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:742)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:681)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:649)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1605)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:491)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:230)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:223)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:213)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:167)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:142)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 22 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/amazonaws/auth/AWSCredentials
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2729)
+	at java.lang.Class.getDeclaredMethods(Class.java:2003)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 38 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.amazonaws.auth.AWSCredentials
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:419)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:352)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:352)
+	... 42 common frames omitted
+12400200 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 7276 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+12400200 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+12400200 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+12400615 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:184)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:144)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:236)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:706)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.plateer.BoardBootApplication.main(BoardBootApplication.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.plateer.config.AWSConfig] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@7693ac37]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:743)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:742)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:681)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:649)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1605)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:491)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:230)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:223)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:213)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:167)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:142)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 22 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/amazonaws/auth/AWSCredentials
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2729)
+	at java.lang.Class.getDeclaredMethods(Class.java:2003)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 38 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.amazonaws.auth.AWSCredentials
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:419)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:352)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:352)
+	... 42 common frames omitted
+883  [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 10264 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+885  [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+886  [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+3515 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 's3Client': Unsatisfied dependency expressed through field 'amazonS3'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'amazonS3' defined in class path resource [com/plateer/config/AWSConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.amazonaws.services.s3.AmazonS3]: Factory method 'amazonS3' threw exception; nested exception is com.amazonaws.SdkClientException: Could not find region information for 'null' in SDK metadata.
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.plateer.BoardBootApplication.main(BoardBootApplication.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'amazonS3' defined in class path resource [com/plateer/config/AWSConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.amazonaws.services.s3.AmazonS3]: Factory method 'amazonS3' threw exception; nested exception is com.amazonaws.SdkClientException: Could not find region information for 'null' in SDK metadata.
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:656)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:484)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 24 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.amazonaws.services.s3.AmazonS3]: Factory method 'amazonS3' threw exception; nested exception is com.amazonaws.SdkClientException: Could not find region information for 'null' in SDK metadata.
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	... 37 common frames omitted
+Caused by: com.amazonaws.SdkClientException: Could not find region information for 'null' in SDK metadata.
+	at com.amazonaws.client.builder.AwsClientBuilder.getRegionObject(AwsClientBuilder.java:258)
+	at com.amazonaws.client.builder.AwsClientBuilder.withRegion(AwsClientBuilder.java:245)
+	at com.plateer.config.AWSConfig.amazonS3(AWSConfig.java:34)
+	at com.plateer.config.AWSConfig$$EnhancerBySpringCGLIB$$b30c2220.CGLIB$amazonS3$1(<generated>)
+	at com.plateer.config.AWSConfig$$EnhancerBySpringCGLIB$$b30c2220$$FastClassBySpringCGLIB$$233a5530.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.plateer.config.AWSConfig$$EnhancerBySpringCGLIB$$b30c2220.amazonS3(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 38 common frames omitted
+12564930 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 7276 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+12564930 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+12564930 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+12565334 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:184)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:144)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:236)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:706)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.plateer.BoardBootApplication.main(BoardBootApplication.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.plateer.config.AWSConfig] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@1e63e856]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:743)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:742)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:681)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:649)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1605)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:491)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:230)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:223)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:213)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:167)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:142)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 22 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/amazonaws/auth/AWSCredentials
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2729)
+	at java.lang.Class.getDeclaredMethods(Class.java:2003)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 38 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.amazonaws.auth.AWSCredentials
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:419)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:352)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:352)
+	... 42 common frames omitted
+789  [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 8356 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+791  [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+791  [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+4669 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 4.307 seconds (JVM running for 5.31)
+4671 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+12741256 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 7276 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+12741256 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+12741256 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+175221 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 8356 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+175222 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+175222 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+12741863 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:184)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:144)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:236)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:706)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.plateer.BoardBootApplication.main(BoardBootApplication.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.plateer.config.AWSConfig] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@1bf2c544]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:743)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:742)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:681)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:649)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1605)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:491)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:230)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:223)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:213)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:167)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:142)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 22 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/amazonaws/auth/AWSCredentials
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2729)
+	at java.lang.Class.getDeclaredMethods(Class.java:2003)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 38 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.amazonaws.auth.AWSCredentials
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:419)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:352)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:352)
+	... 42 common frames omitted
+176376 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 1.247 seconds (JVM running for 177.017)
+176378 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+924  [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 9576 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+926  [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+927  [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+4931 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 4.487 seconds (JVM running for 5.821)
+4934 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+109461 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 9576 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+109461 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+109462 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+111318 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 1.925 seconds (JVM running for 112.208)
+111321 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+131936 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 9576 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+131936 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+131936 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+133163 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 1.289 seconds (JVM running for 134.052)
+133165 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+215352 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 9576 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+215352 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+215352 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+217628 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 2.487 seconds (JVM running for 218.518)
+217632 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+408778 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 9576 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+408779 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+408779 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+409910 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 1.189 seconds (JVM running for 410.801)
+409913 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+411676 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 9576 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+411676 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+411677 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+412558 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 0.937 seconds (JVM running for 413.448)
+412559 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+1262 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 9404 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+1265 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+1265 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+8448 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 8.102 seconds (JVM running for 9.1)
+8453 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+125045 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 9404 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+125046 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+125047 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+126342 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 1.374 seconds (JVM running for 126.994)
+126344 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+2976693 [http-nio-9999-exec-5] DEBUG c.p.m.Q.selectByUserName - ==>  Preparing: select * from Question where writer = ? 
+2976712 [http-nio-9999-exec-5] DEBUG c.p.m.Q.selectByUserName - ==> Parameters: 나윤주먹밥(String)
+2976747 [http-nio-9999-exec-5] DEBUG c.p.m.Q.selectByUserName - <==      Total: 7
+2978063 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+2978064 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 90(Integer)
+2978071 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+2978123 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 90 
+2978123 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+2978130 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+2988718 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+2988718 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 90(Integer)
+2988733 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+2988753 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 90 
+2988753 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+2988760 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+3014140 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+3014141 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 90(Integer)
+3014152 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+3014176 [http-nio-9999-exec-3] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 90 
+3014176 [http-nio-9999-exec-3] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+3014182 [http-nio-9999-exec-3] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+3034595 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+3034595 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 90(Integer)
+3034603 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+3034623 [http-nio-9999-exec-5] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 90 
+3034623 [http-nio-9999-exec-5] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+3034629 [http-nio-9999-exec-5] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+3866204 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 9404 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+3866204 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+3866204 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+3867310 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 1.187 seconds (JVM running for 3867.963)
+3867312 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+3959301 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsTitle, orderId, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ? ?, ?, ?, ?) 
+3959331 [http-nio-9999-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'orderId' in 'class com.plateer.domain.dto.Question'] with root cause
+org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'orderId' in 'class com.plateer.domain.dto.Question'
+	at org.apache.ibatis.reflection.Reflector.getGetInvoker(Reflector.java:373)
+	at org.apache.ibatis.reflection.MetaClass.getGetInvoker(MetaClass.java:163)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.getBeanProperty(BeanWrapper.java:162)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.get(BeanWrapper.java:49)
+	at org.apache.ibatis.reflection.MetaObject.getValue(MetaObject.java:122)
+	at org.apache.ibatis.scripting.defaults.DefaultParameterHandler.setParameters(DefaultParameterHandler.java:79)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.parameterize(PreparedStatementHandler.java:94)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.parameterize(RoutingStatementHandler.java:64)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:88)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy79.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:144)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy110.insert(Unknown Source)
+	at com.plateer.logic.QuestionDaoImpl.save(QuestionDaoImpl.java:20)
+	at com.plateer.logic.QuestionDaoImpl$$FastClassBySpringCGLIB$$1ffbb644.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.plateer.logic.QuestionDaoImpl$$EnhancerBySpringCGLIB$$fc5863c1.save(<generated>)
+	at com.plateer.logic.QuestionLogic.createQuestion(QuestionLogic.java:23)
+	at com.plateer.controller.BoardController.questionRegistration(BoardController.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+3959391 [http-nio-9999-exec-4] DEBUG c.p.m.Q.getRecentQuestion - ==>  Preparing: select max(postId) from Question 
+3959391 [http-nio-9999-exec-4] DEBUG c.p.m.Q.getRecentQuestion - ==> Parameters: 
+3959398 [http-nio-9999-exec-4] DEBUG c.p.m.Q.getRecentQuestion - <==      Total: 1
+3962702 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+3962703 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 90(Integer)
+3962710 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+3962734 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 90 
+3962734 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+3962741 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+4080566 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsTitle, orderId, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ? ?, ?, ?, ?) 
+4080568 [http-nio-9999-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'orderId' in 'class com.plateer.domain.dto.Question'] with root cause
+org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'orderId' in 'class com.plateer.domain.dto.Question'
+	at org.apache.ibatis.reflection.Reflector.getGetInvoker(Reflector.java:373)
+	at org.apache.ibatis.reflection.MetaClass.getGetInvoker(MetaClass.java:163)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.getBeanProperty(BeanWrapper.java:162)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.get(BeanWrapper.java:49)
+	at org.apache.ibatis.reflection.MetaObject.getValue(MetaObject.java:122)
+	at org.apache.ibatis.scripting.defaults.DefaultParameterHandler.setParameters(DefaultParameterHandler.java:79)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.parameterize(PreparedStatementHandler.java:94)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.parameterize(RoutingStatementHandler.java:64)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:88)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy79.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:144)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy110.insert(Unknown Source)
+	at com.plateer.logic.QuestionDaoImpl.save(QuestionDaoImpl.java:20)
+	at com.plateer.logic.QuestionDaoImpl$$FastClassBySpringCGLIB$$1ffbb644.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.plateer.logic.QuestionDaoImpl$$EnhancerBySpringCGLIB$$fc5863c1.save(<generated>)
+	at com.plateer.logic.QuestionLogic.createQuestion(QuestionLogic.java:23)
+	at com.plateer.controller.BoardController.questionRegistration(BoardController.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+4080588 [http-nio-9999-exec-4] DEBUG c.p.m.Q.getRecentQuestion - ==>  Preparing: select max(postId) from Question 
+4080588 [http-nio-9999-exec-4] DEBUG c.p.m.Q.getRecentQuestion - ==> Parameters: 
+4080598 [http-nio-9999-exec-4] DEBUG c.p.m.Q.getRecentQuestion - <==      Total: 1
+4081920 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+4081921 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 90(Integer)
+4081932 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+4081954 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 90 
+4081955 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+4081963 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+4132795 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 9404 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+4132795 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+4132795 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+4133713 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 0.979 seconds (JVM running for 4134.365)
+4133714 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+988  [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 10480 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+991  [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+992  [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+4929 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 4.515 seconds (JVM running for 5.574)
+4932 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+28298 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsTitle, orderId, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ? ?, ?, ?, ?) 
+28315 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 나윤주먹밥(String), 2020 - 4 - 7(String), 배송확인(String), 7.5CM 토탈모션 페이턴트 슬링백 펌프스(String), 1002178921(String), asdf(String), asdf(String), false(Boolean), false(Boolean)
+28417 [http-nio-9999-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: java.sql.SQLException: (conn=48260) Column count doesn't match value count at row 1
+### The error may exist in file [C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-store\target\classes\com\plateer\mapper\Question.xml]
+### The error may involve com.plateer.mapper.QuestionMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into Question (state, writer, date, territory, goodsTitle, orderId, title, description, smsAlarm, emailAlarm)         values (?, ?, ?, ?, ?, ? ?, ?, ?, ?)
+### Cause: java.sql.SQLException: (conn=48260) Column count doesn't match value count at row 1
+; bad SQL grammar []; nested exception is java.sql.SQLException: (conn=48260) Column count doesn't match value count at row 1] with root cause
+java.sql.SQLException: Column count doesn't match value count at row 1
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.readErrorPacket(AbstractQueryProtocol.java:1598)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.readPacket(AbstractQueryProtocol.java:1460)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.getResult(AbstractQueryProtocol.java:1423)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.executeQuery(AbstractQueryProtocol.java:281)
+	at org.mariadb.jdbc.ClientSidePreparedStatement.executeInternal(ClientSidePreparedStatement.java:213)
+	at org.mariadb.jdbc.ClientSidePreparedStatement.execute(ClientSidePreparedStatement.java:145)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy102.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy79.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:144)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy80.insert(Unknown Source)
+	at com.plateer.logic.QuestionDaoImpl.save(QuestionDaoImpl.java:20)
+	at com.plateer.logic.QuestionDaoImpl$$FastClassBySpringCGLIB$$1ffbb644.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.plateer.logic.QuestionDaoImpl$$EnhancerBySpringCGLIB$$37025971.save(<generated>)
+	at com.plateer.logic.QuestionLogic.createQuestion(QuestionLogic.java:23)
+	at com.plateer.controller.BoardController.questionRegistration(BoardController.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+28473 [http-nio-9999-exec-4] DEBUG c.p.m.Q.getRecentQuestion - ==>  Preparing: select max(postId) from Question 
+28473 [http-nio-9999-exec-4] DEBUG c.p.m.Q.getRecentQuestion - ==> Parameters: 
+28496 [http-nio-9999-exec-4] DEBUG c.p.m.Q.getRecentQuestion - <==      Total: 1
+31509 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+31511 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 90(Integer)
+31521 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+31572 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 90 
+31572 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+31581 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+172641 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 10480 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+172641 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+172641 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+173601 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 1.022 seconds (JVM running for 174.246)
+173603 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+185084 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsTitle, orderId, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+185085 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 나윤주먹밥(String), 2020 - 4 - 7(String), L.POINT(String), 후드 롱 베이직 원피스 (GIHOP851F)(String), 1203917702(String), asdf(String), asdf(String), false(Boolean), false(Boolean)
+185092 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+185104 [http-nio-9999-exec-4] DEBUG c.p.m.Q.getRecentQuestion - ==>  Preparing: select max(postId) from Question 
+185104 [http-nio-9999-exec-4] DEBUG c.p.m.Q.getRecentQuestion - ==> Parameters: 
+185111 [http-nio-9999-exec-4] DEBUG c.p.m.Q.getRecentQuestion - <==      Total: 1
+186398 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+186399 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 91(Integer)
+186409 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+186437 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 91 
+186437 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+186444 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+224362 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsTitle, orderId, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+224363 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 나윤주먹밥(String), 2020 - 4 - 7(String), 주문내역확인(String), 척테일러1970S 로우 클래식 블랙 162058C(String), 1002898720(String), 나윤쓰 주먹밥(String), 버억(String), false(Boolean), false(Boolean)
+224369 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+224379 [http-nio-9999-exec-1] DEBUG c.p.m.Q.getRecentQuestion - ==>  Preparing: select max(postId) from Question 
+224380 [http-nio-9999-exec-1] DEBUG c.p.m.Q.getRecentQuestion - ==> Parameters: 
+224386 [http-nio-9999-exec-1] DEBUG c.p.m.Q.getRecentQuestion - <==      Total: 1
+225326 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+225326 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 92(Integer)
+225557 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+225577 [http-nio-9999-exec-6] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 92 
+225577 [http-nio-9999-exec-6] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+225584 [http-nio-9999-exec-6] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+228303 [http-nio-9999-exec-8] DEBUG c.p.m.Q.selectByUserName - ==>  Preparing: select * from Question where writer = ? 
+228303 [http-nio-9999-exec-8] DEBUG c.p.m.Q.selectByUserName - ==> Parameters: 나윤주먹밥(String)
+228312 [http-nio-9999-exec-8] DEBUG c.p.m.Q.selectByUserName - <==      Total: 3
+230378 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+230378 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 92(Integer)
+230386 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+230405 [http-nio-9999-exec-1] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 92 
+230405 [http-nio-9999-exec-1] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+230415 [http-nio-9999-exec-1] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+252488 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+252489 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+252503 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+277853 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+277853 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 92(Integer)
+277866 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+277892 [http-nio-9999-exec-10] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 92 
+277893 [http-nio-9999-exec-10] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+277901 [http-nio-9999-exec-10] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+293605 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsTitle, orderId, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+293606 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 나윤주먹밥(String), 2020 - 4 - 7(String), 반품접수(String), 척테일러1970S 로우 클래식 블랙 162058C(String), 1002898720(String), 오우오우(String), 너무맛있고(String), false(Boolean), false(Boolean)
+293612 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+293622 [http-nio-9999-exec-4] DEBUG c.p.m.Q.getRecentQuestion - ==>  Preparing: select max(postId) from Question 
+293622 [http-nio-9999-exec-4] DEBUG c.p.m.Q.getRecentQuestion - ==> Parameters: 
+293629 [http-nio-9999-exec-4] DEBUG c.p.m.Q.getRecentQuestion - <==      Total: 1
+294581 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+294582 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 93(Integer)
+294589 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+294609 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 93 
+294609 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+294614 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+362591 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+362592 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 93(Integer)
+362600 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+362983 [http-nio-9999-exec-5] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 93 
+362983 [http-nio-9999-exec-5] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+362992 [http-nio-9999-exec-5] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+1023084 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+1023084 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 93(Integer)
+1023104 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+1023132 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 93 
+1023132 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+1023146 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+1046245 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+1046245 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 93(Integer)
+1046253 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+1046652 [http-nio-9999-exec-5] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 93 
+1046652 [http-nio-9999-exec-5] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+1046663 [http-nio-9999-exec-5] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+1552818 [http-nio-9999-exec-10] DEBUG c.p.m.Q.selectByUserName - ==>  Preparing: select * from Question where writer = ? 
+1552818 [http-nio-9999-exec-10] DEBUG c.p.m.Q.selectByUserName - ==> Parameters: 나윤주먹밥(String)
+1552826 [http-nio-9999-exec-10] DEBUG c.p.m.Q.selectByUserName - <==      Total: 4
+1555364 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+1555365 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 12(Integer)
+1555374 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+1555431 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 12 
+1555431 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+1555437 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+1564812 [http-nio-9999-exec-6] DEBUG c.p.m.Q.selectByUserName - ==>  Preparing: select * from Question where writer = ? 
+1564813 [http-nio-9999-exec-6] DEBUG c.p.m.Q.selectByUserName - ==> Parameters: 나윤주먹밥(String)
+1564822 [http-nio-9999-exec-6] DEBUG c.p.m.Q.selectByUserName - <==      Total: 4
+1568745 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+1568745 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 12(Integer)
+1568752 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+1568773 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 12 
+1568773 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+1568778 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+1577388 [http-nio-9999-exec-8] DEBUG c.p.m.Q.selectByUserName - ==>  Preparing: select * from Question where writer = ? 
+1577389 [http-nio-9999-exec-8] DEBUG c.p.m.Q.selectByUserName - ==> Parameters: 나윤주먹밥(String)
+1577404 [http-nio-9999-exec-8] DEBUG c.p.m.Q.selectByUserName - <==      Total: 4
+1584152 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+1584153 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+1584164 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+1591064 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+1591065 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 93(Integer)
+1591073 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+1591127 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 93 
+1591128 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+1591134 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+1599144 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+1599144 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+1599159 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+1602116 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+1602117 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 92(Integer)
+1602125 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+1602191 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 92 
+1602191 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+1602197 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+1630201 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.update - ==>  Preparing: update Question set territory=?, title=?, description=? where postId=? 
+1630202 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.update - ==> Parameters: 주문내역확인(String), 나윤쓰 주먹밥(String), 버억(String), 92(Integer)
+1630214 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.update - <==    Updates: 1
+1633242 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.delete - ==>  Preparing: delete from Question where postId = ? 
+1633243 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.delete - ==> Parameters: 92(Integer)
+1633250 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.delete - <==    Updates: 1
+1633268 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+1633268 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+1633287 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+1637467 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+1637468 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 16(Integer)
+1637475 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+1637510 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 16 
+1637510 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+1637519 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+1642994 [http-nio-9999-exec-1] DEBUG c.p.m.Q.selectByUserName - ==>  Preparing: select * from Question where writer = ? 
+1642994 [http-nio-9999-exec-1] DEBUG c.p.m.Q.selectByUserName - ==> Parameters: 나윤주먹밥(String)
+1643017 [http-nio-9999-exec-1] DEBUG c.p.m.Q.selectByUserName - <==      Total: 3
+1655298 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+1655298 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+1655316 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+1657090 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+1657091 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 16(Integer)
+1657108 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+1657171 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 16 
+1657171 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+1657183 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+1664115 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+1664116 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+1664131 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+1666677 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+1666677 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 16(Integer)
+1666690 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+1666750 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 16 
+1666751 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+1666758 [http-nio-9999-exec-4] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+1678058 [http-nio-9999-exec-6] DEBUG c.p.m.Q.selectByUserName - ==>  Preparing: select * from Question where writer = ? 
+1678058 [http-nio-9999-exec-6] DEBUG c.p.m.Q.selectByUserName - ==> Parameters: 나윤주먹밥(String)
+1678070 [http-nio-9999-exec-6] DEBUG c.p.m.Q.selectByUserName - <==      Total: 3
+1683845 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+1683846 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+1683855 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+1685677 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+1685677 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 16(Integer)
+1685686 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+1685753 [http-nio-9999-exec-1] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 16 
+1685753 [http-nio-9999-exec-1] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+1685767 [http-nio-9999-exec-1] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+1689758 [http-nio-9999-exec-4] DEBUG c.p.m.Q.selectByUserName - ==>  Preparing: select * from Question where writer = ? 
+1689758 [http-nio-9999-exec-4] DEBUG c.p.m.Q.selectByUserName - ==> Parameters: 나윤주먹밥(String)
+1689765 [http-nio-9999-exec-4] DEBUG c.p.m.Q.selectByUserName - <==      Total: 3
+1818198 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+1818199 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+1818216 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+1820297 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+1820297 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 16(Integer)
+1820311 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+1820379 [http-nio-9999-exec-1] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 16 
+1820380 [http-nio-9999-exec-1] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+1820392 [http-nio-9999-exec-1] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+1936473 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+1936474 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+1936479 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+1938254 [http-nio-9999-exec-5] DEBUG c.p.m.Q.selectByUserName - ==>  Preparing: select * from Question where writer = ? 
+1938254 [http-nio-9999-exec-5] DEBUG c.p.m.Q.selectByUserName - ==> Parameters: 나윤주먹밥(String)
+1938259 [http-nio-9999-exec-5] DEBUG c.p.m.Q.selectByUserName - <==      Total: 3
+1939148 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+1939148 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 16(Integer)
+1939154 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+1939199 [http-nio-9999-exec-10] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 16 
+1939199 [http-nio-9999-exec-10] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+1939206 [http-nio-9999-exec-10] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+1943488 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+1943489 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+1943495 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+1946730 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+1946730 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 16(Integer)
+1946737 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+1946755 [http-nio-9999-exec-5] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 16 
+1946755 [http-nio-9999-exec-5] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+1946760 [http-nio-9999-exec-5] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+1993485 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+1993485 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 16(Integer)
+1993490 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+1993568 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 16 
+1993568 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+1993576 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+2018758 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsTitle, orderId, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2018759 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 나윤주먹밥(String), 2020 - 4 - 7(String), 주문내역확인(String), 7.5CM 토탈모션 페이턴트 슬링백 펌프스(String), 1002178921(String), 제대로 주문된거 맞나요?(String), 맞는지..?(String), false(Boolean), false(Boolean)
+2018765 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+2018826 [http-nio-9999-exec-3] DEBUG c.p.m.Q.getRecentQuestion - ==>  Preparing: select max(postId) from Question 
+2018826 [http-nio-9999-exec-3] DEBUG c.p.m.Q.getRecentQuestion - ==> Parameters: 
+2018832 [http-nio-9999-exec-3] DEBUG c.p.m.Q.getRecentQuestion - <==      Total: 1
+2019929 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+2019929 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 94(Integer)
+2019937 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+2019987 [http-nio-9999-exec-10] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 94 
+2019987 [http-nio-9999-exec-10] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+2019997 [http-nio-9999-exec-10] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+2024007 [http-nio-9999-exec-1] DEBUG c.p.m.Q.selectByUserName - ==>  Preparing: select * from Question where writer = ? 
+2024007 [http-nio-9999-exec-1] DEBUG c.p.m.Q.selectByUserName - ==> Parameters: 나윤주먹밥(String)
+2024012 [http-nio-9999-exec-1] DEBUG c.p.m.Q.selectByUserName - <==      Total: 4
+2028184 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+2028185 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 12(Integer)
+2028195 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+2028255 [http-nio-9999-exec-3] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 12 
+2028255 [http-nio-9999-exec-3] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+2028268 [http-nio-9999-exec-3] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+2035490 [http-nio-9999-exec-7] DEBUG c.p.m.Q.selectByUserName - ==>  Preparing: select * from Question where writer = ? 
+2035490 [http-nio-9999-exec-7] DEBUG c.p.m.Q.selectByUserName - ==> Parameters: 나윤주먹밥(String)
+2035498 [http-nio-9999-exec-7] DEBUG c.p.m.Q.selectByUserName - <==      Total: 4
+2036815 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+2036815 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 94(Integer)
+2036820 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+2036867 [http-nio-9999-exec-1] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 94 
+2036867 [http-nio-9999-exec-1] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+2036874 [http-nio-9999-exec-1] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+2044172 [http-nio-9999-exec-2] DEBUG c.p.m.Q.selectByUserName - ==>  Preparing: select * from Question where writer = ? 
+2044172 [http-nio-9999-exec-2] DEBUG c.p.m.Q.selectByUserName - ==> Parameters: 나윤주먹밥(String)
+2044178 [http-nio-9999-exec-2] DEBUG c.p.m.Q.selectByUserName - <==      Total: 4
+2045465 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+2045466 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 93(Integer)
+2045473 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+2045530 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 93 
+2045530 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+2045538 [http-nio-9999-exec-7] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+2050794 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+2050794 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+2050800 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+2062623 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+2062623 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 1(Integer)
+2062628 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+2062653 [http-nio-9999-exec-6] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 1 
+2062653 [http-nio-9999-exec-6] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+2062659 [http-nio-9999-exec-6] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+2064619 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+2064619 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+2064626 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+2066230 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+2066230 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 4(Integer)
+2066237 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+2066278 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 4 
+2066278 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+2066284 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+5252514 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+5252515 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+5252524 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+5255583 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+5255584 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 11(Integer)
+5255589 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+5255651 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 11 
+5255651 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+5255657 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+5258080 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+5258080 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+5258086 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
