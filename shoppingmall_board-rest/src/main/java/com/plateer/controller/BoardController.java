@@ -83,7 +83,6 @@ public class BoardController {
 	@PostMapping("question/search/")
 	public List<Question> searchQuestion(@RequestBody Search search) {
 		
-		System.out.println("search Controller");
 		return questionService.searchQuestion(search);
 	}
 

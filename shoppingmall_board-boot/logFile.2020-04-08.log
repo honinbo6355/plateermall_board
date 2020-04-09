@@ -1,0 +1,860 @@
+60723923 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsTitle, orderId, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+60723982 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 나윤주먹밥(String), 2020 - 4 - 8(String), 교환접수(String), 척테일러1970S 로우 클래식 블랙 162058C(String), 1002898720(String), 왜자꾸 꺼지는지 모르겠다.(String), ...(String), false(Boolean), false(Boolean)
+60724003 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+60724026 [http-nio-9999-exec-5] DEBUG c.p.m.Q.getRecentQuestion - ==>  Preparing: select max(postId) from Question 
+60724028 [http-nio-9999-exec-5] DEBUG c.p.m.Q.getRecentQuestion - ==> Parameters: 
+60724044 [http-nio-9999-exec-5] DEBUG c.p.m.Q.getRecentQuestion - <==      Total: 1
+60725090 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+60725091 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 95(Integer)
+60725108 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+60725138 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 95 
+60725138 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+60725155 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+60732277 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+60732277 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+60732285 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 12
+60736480 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+60736480 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 95(Integer)
+60736493 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+60736504 [http-nio-9999-exec-6] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 95 
+60736504 [http-nio-9999-exec-6] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+60736518 [http-nio-9999-exec-6] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+60754657 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.update - ==>  Preparing: update Question set territory=?, title=?, description=? where postId=? 
+60754657 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.update - ==> Parameters: 교환접수(String), 왜자꾸 꺼지는지 모르겠다.(String), ...ㅁㄹ(String), 95(Integer)
+60754666 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.update - <==    Updates: 1
+60758572 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.delete - ==>  Preparing: delete from Question where postId = ? 
+60758573 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.delete - ==> Parameters: 95(Integer)
+60758581 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.delete - <==    Updates: 1
+60758584 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+60758584 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+60758593 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+60761300 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+60761300 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 94(Integer)
+60761307 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+60761321 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 94 
+60761322 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+60761327 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+60766544 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+60766544 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+60766551 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+60772598 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+60772598 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 93(Integer)
+60772604 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+60772620 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 93 
+60772620 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+60772626 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+60776715 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+60776715 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+60776723 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+60777952 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+60777953 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 91(Integer)
+60777959 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+60777972 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 91 
+60777972 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+60777977 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+60784493 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+60784494 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+60784504 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+60786106 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+60786106 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 14(Integer)
+60786112 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+60786126 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 14 
+60786126 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+60786135 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+60792883 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+60792883 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+60792892 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+60817287 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+60817287 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+60817298 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+61101874 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+61101874 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 94(Integer)
+61101880 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+61101892 [http-nio-9999-exec-3] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 94 
+61101892 [http-nio-9999-exec-3] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+61101898 [http-nio-9999-exec-3] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+61967931 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 10480 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+61967932 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+61967932 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+61969407 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 1.586 seconds (JVM running for 61983.756)
+61969410 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+61980432 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 10480 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+61980432 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+61980432 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+61981364 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 0.997 seconds (JVM running for 61995.713)
+61981366 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+61988237 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 10480 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+61988237 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+61988237 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+61989166 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 0.986 seconds (JVM running for 62003.515)
+61989167 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+62032851 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 10480 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+62032851 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+62032851 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+62033800 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 1.007 seconds (JVM running for 62048.149)
+62033802 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+62063132 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 10480 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+62063132 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+62063132 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+62064078 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 1.008 seconds (JVM running for 62078.427)
+62064079 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+62141393 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 10480 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+62141393 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+62141393 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+62142253 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 0.931 seconds (JVM running for 62156.602)
+62142254 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+62180775 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 10480 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+62180776 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+62180776 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+62181708 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 0.993 seconds (JVM running for 62196.057)
+62181709 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+62201786 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 10480 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+62201786 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+62201786 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+62202635 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 0.903 seconds (JVM running for 62216.984)
+62202636 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+62249393 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 10480 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+62249393 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+62249393 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+62250592 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 1.28 seconds (JVM running for 62264.941)
+62250593 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+62832391 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 10480 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+62832392 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+62832392 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+62833341 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 1.004 seconds (JVM running for 62847.69)
+62833342 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+62845367 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 10480 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+62845367 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+62845367 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+62846351 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 1.051 seconds (JVM running for 62860.7)
+62846354 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+62877658 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 10480 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+62877658 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+62877658 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+62878553 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 0.948 seconds (JVM running for 62892.903)
+62878555 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+62883351 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 10480 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+62883351 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+62883352 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+62884204 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 0.908 seconds (JVM running for 62898.553)
+62884206 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+62995449 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 10480 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+62995449 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+62995450 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+62996563 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 1.195 seconds (JVM running for 63010.912)
+62996564 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+63926988 [http-nio-9999-exec-2] DEBUG c.p.m.Q.selectByUserName - ==>  Preparing: select * from Question where writer = ? 
+63926989 [http-nio-9999-exec-2] DEBUG c.p.m.Q.selectByUserName - ==> Parameters: 나윤주먹밥(String)
+63926996 [http-nio-9999-exec-2] DEBUG c.p.m.Q.selectByUserName - <==      Total: 4
+63967567 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+63967567 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+63967574 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+63975547 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 10480 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+63975547 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+63975547 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+63976417 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 0.922 seconds (JVM running for 63990.767)
+63976419 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+64002734 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+64002734 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+64002742 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+64035792 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 10480 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+64035793 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+64035793 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+64036822 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 1.094 seconds (JVM running for 64051.17)
+64036824 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+64062216 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+64062224 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+64062232 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+64088438 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 10480 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+64088438 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+64088439 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+64089317 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 0.934 seconds (JVM running for 64103.666)
+64089318 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+64113598 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 10480 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+64113598 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+64113598 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+64114411 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 0.865 seconds (JVM running for 64128.76)
+64114412 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+64174732 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 10480 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+64174732 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+64174733 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+64175585 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 0.907 seconds (JVM running for 64189.934)
+64175586 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+64215191 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 10480 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+64215191 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+64215191 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+64216079 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 0.951 seconds (JVM running for 64230.428)
+64216080 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+64219831 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 10480 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+64219831 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+64219831 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+64220671 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 0.897 seconds (JVM running for 64235.02)
+64220673 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+64246989 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 10480 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+64246989 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+64246989 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+64247824 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 0.894 seconds (JVM running for 64262.173)
+64247825 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+64251646 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 10480 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+64251646 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+64251646 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+64252502 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 0.911 seconds (JVM running for 64266.851)
+64252504 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+64255285 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 10480 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+64255285 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+64255285 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+64256110 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 0.882 seconds (JVM running for 64270.459)
+64256112 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+64771348 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+64771350 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+64771359 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+1024 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 3116 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+1027 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+1027 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+5723 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 5.326 seconds (JVM running for 7.155)
+5725 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+10479 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+10505 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+10539 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+22374 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+22375 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+22388 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+137174 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 3116 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+137174 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+137174 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+138151 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 1.04 seconds (JVM running for 139.584)
+138154 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+166696 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 3116 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+166696 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+166696 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+167559 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 0.922 seconds (JVM running for 168.991)
+167561 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+198717 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+198718 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+198726 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+217688 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 3116 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+217688 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+217688 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+218569 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 0.94 seconds (JVM running for 220.002)
+218571 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+239606 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+239607 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+239623 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+266681 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 3116 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+266682 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+266682 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+267546 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 0.923 seconds (JVM running for 268.979)
+267547 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+281556 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 3116 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+281557 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+281557 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+282530 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 1.036 seconds (JVM running for 283.962)
+282531 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+305535 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+305536 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+305545 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+349244 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+349244 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+349265 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+353731 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+353731 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+353741 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+358382 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+358382 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+358391 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+398981 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+398981 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+398993 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+400687 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+400687 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+400700 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+427499 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+427499 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+427509 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+433939 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+433939 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+433946 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+485199 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 3116 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+485199 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+485199 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+486039 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 0.897 seconds (JVM running for 487.472)
+486041 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+564650 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+564651 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+564666 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+572392 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+572392 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+572401 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+584300 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+584301 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+584310 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+621468 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+621468 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+621477 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+639400 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+639400 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+639410 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+765442 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+765442 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+765450 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+831090 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+831090 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+831098 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+843839 [http-nio-9999-exec-8] DEBUG c.p.m.Q.selectByUserName - ==>  Preparing: select * from Question where writer = ? 
+843840 [http-nio-9999-exec-8] DEBUG c.p.m.Q.selectByUserName - ==> Parameters: 나윤주먹밥(String)
+843845 [http-nio-9999-exec-8] DEBUG c.p.m.Q.selectByUserName - <==      Total: 4
+844489 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+844490 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+844496 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+846905 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+846905 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+846923 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+850411 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+850411 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+850418 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+890909 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+890909 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+890916 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+896906 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+896907 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+896914 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+1057716 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+1057716 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+1057722 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+1079775 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+1079776 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+1079796 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+854  [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 16948 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+856  [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+857  [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+4702 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 4.346 seconds (JVM running for 5.356)
+4706 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+16908 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+16932 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+16963 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+398582 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+398584 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+398601 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+405876 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+405876 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+405890 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+428182 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+428182 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+428191 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+480791 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 16948 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+480791 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+480791 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+481967 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 1.238 seconds (JVM running for 482.621)
+481969 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+585301 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+585303 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+585310 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+840  [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 5612 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+843  [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+843  [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+4353 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 3.967 seconds (JVM running for 5.023)
+4356 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+20775 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+20791 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+20824 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+24334 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+24336 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 12(Integer)
+24342 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+24390 [http-nio-9999-exec-6] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 12 
+24390 [http-nio-9999-exec-6] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+24396 [http-nio-9999-exec-6] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 1
+25911 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+25911 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+25926 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+27062 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+27062 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 94(Integer)
+27070 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+27090 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 94 
+27091 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+27095 [http-nio-9999-exec-2] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+33981 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+33982 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+33990 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+92642 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+92642 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+92651 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+97054 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+97054 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+97064 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+113270 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+113270 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+113283 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+349365 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+349365 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+349373 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+391009 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+391009 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+391016 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+513626 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+513627 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+513634 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+524724 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+524724 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+524732 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+530962 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.search - ==>  Preparing: select * from Question where title like CONCAT('%', ?, '%') 
+530963 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.search - ==> Parameters: 나윤(String)
+530971 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.search - <==      Total: 1
+556355 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.search - ==>  Preparing: select * from Question where (title like CONCAT('%', ?, '%') or description like CONCAT('%', ?, '%') or writer like CONCAT('%', ?, '%')) 
+556356 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.search - ==> Parameters: (String), (String), (String)
+556370 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.search - <==      Total: 11
+562843 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+562843 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+562850 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+576947 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+576947 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+576954 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+582667 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+582667 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+582676 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+597527 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.search - ==>  Preparing: select * from Question where writer like CONCAT('%', ?, '%') 
+597528 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.search - ==> Parameters: 나윤(String)
+597533 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.search - <==      Total: 4
+619613 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+619613 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+619620 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+6503342 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsTitle, orderId, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+6503346 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 나윤주먹밥(String), 2020 - 4 - 8(String), 배송확인(String), 척테일러1970S 로우 클래식 블랙 162058C(String), 1002898720(String), 나윤주먹밥 문의 테스트(String), 테스트(String), false(Boolean), false(Boolean)
+6503352 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+6503364 [http-nio-9999-exec-8] DEBUG c.p.m.Q.getRecentQuestion - ==>  Preparing: select max(postId) from Question 
+6503365 [http-nio-9999-exec-8] DEBUG c.p.m.Q.getRecentQuestion - ==> Parameters: 
+6503371 [http-nio-9999-exec-8] DEBUG c.p.m.Q.getRecentQuestion - <==      Total: 1
+6504815 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+6504815 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 96(Integer)
+6504821 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+6504841 [http-nio-9999-exec-1] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 96 
+6504841 [http-nio-9999-exec-1] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+6504847 [http-nio-9999-exec-1] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+6555096 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.update - ==>  Preparing: update Question set territory=?, title=?, description=? where postId=? 
+6555097 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.update - ==> Parameters: 배송확인(String), 나윤주먹밥 문의 테스트(String), 테스트123(String), 96(Integer)
+6555108 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.update - <==    Updates: 1
+6560690 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+6560690 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+6560696 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 12
+6603523 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.search - ==>  Preparing: select * from Question where (title like CONCAT('%', ?, '%') or description like CONCAT('%', ?, '%') or writer like CONCAT('%', ?, '%')) 
+6603524 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.search - ==> Parameters: 나윤(String), 나윤(String), 나윤(String)
+6603532 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.search - <==      Total: 5
+6760239 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+6760239 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+6760246 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 12
+6765970 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.search - ==>  Preparing: select * from Question where (title like CONCAT('%', ?, '%') or description like CONCAT('%', ?, '%') or writer like CONCAT('%', ?, '%')) 
+6765970 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.search - ==> Parameters: 나윤(String), 나윤(String), 나윤(String)
+6765982 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.search - <==      Total: 5
+6767841 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+6767841 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 96(Integer)
+6767846 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+6767863 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 96 
+6767863 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+6767868 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+6788861 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.update - ==>  Preparing: update Question set territory=?, title=?, description=? where postId=? 
+6788862 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.update - ==> Parameters: 배송확인(String), 나윤주먹밥 문의 테스트(String), 테스트123-수정(String), 96(Integer)
+6788867 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.update - <==    Updates: 1
+6850660 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.update - ==>  Preparing: update Question set territory=?, title=?, description=? where postId=? 
+6850660 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.update - ==> Parameters: 배송확인(String), 나윤주먹밥 문의 테스트(String), 테스트123-수정(String), 96(Integer)
+6850665 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.update - <==    Updates: 1
+6856417 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+6856418 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+6856425 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 12
+6858218 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+6858218 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 96(Integer)
+6858223 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+6858238 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 96 
+6858239 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+6858244 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+6965893 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+6965894 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 96(Integer)
+6965902 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+6965926 [http-nio-9999-exec-6] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 96 
+6965926 [http-nio-9999-exec-6] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+6965931 [http-nio-9999-exec-6] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+6968459 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+6968459 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 96(Integer)
+6968466 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+6968795 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 96 
+6968796 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+6968803 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+6973015 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.delete - ==>  Preparing: delete from Question where postId = ? 
+6973016 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.delete - ==> Parameters: 96(Integer)
+6973023 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.delete - <==    Updates: 1
+6973046 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+6973046 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+6973053 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+6974946 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+6974946 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 94(Integer)
+6974959 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+6974976 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 94 
+6974977 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+6974988 [http-nio-9999-exec-8] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+6980532 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.delete - ==>  Preparing: delete from Question where postId = ? 
+6980532 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.delete - ==> Parameters: 94(Integer)
+6980539 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.delete - <==    Updates: 1
+6980555 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+6980555 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+6980563 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+6988940 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.insert - ==>  Preparing: insert into Question (state, writer, date, territory, goodsTitle, orderId, title, description, smsAlarm, emailAlarm) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+6988940 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.insert - ==> Parameters: false(Boolean), 나윤주먹밥(String), 2020 - 4 - 8(String), 주문내역확인(String), (String), (String), ㅎㅎ(String), ㅎㅎ(String), false(Boolean), false(Boolean)
+6988950 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.insert - <==    Updates: 1
+6988959 [http-nio-9999-exec-6] DEBUG c.p.m.Q.getRecentQuestion - ==>  Preparing: select max(postId) from Question 
+6988960 [http-nio-9999-exec-6] DEBUG c.p.m.Q.getRecentQuestion - ==> Parameters: 
+6988965 [http-nio-9999-exec-6] DEBUG c.p.m.Q.getRecentQuestion - <==      Total: 1
+6989986 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+6989986 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 97(Integer)
+6989995 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+6990016 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 97 
+6990016 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+6990024 [http-nio-9999-exec-9] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+6992585 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+6992586 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+6992591 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 11
+6998128 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+6998128 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 97(Integer)
+6998133 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+6998151 [http-nio-9999-exec-6] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 97 
+6998151 [http-nio-9999-exec-6] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+6998156 [http-nio-9999-exec-6] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+7015330 [http-nio-9999-exec-8] DEBUG c.p.m.Q.selectByUserName - ==>  Preparing: select * from Question where writer = ? 
+7015330 [http-nio-9999-exec-8] DEBUG c.p.m.Q.selectByUserName - ==> Parameters: 나윤주먹밥(String)
+7015339 [http-nio-9999-exec-8] DEBUG c.p.m.Q.selectByUserName - <==      Total: 4
+7017442 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.select - ==>  Preparing: select * from Question where postId = ? 
+7017443 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.select - ==> Parameters: 97(Integer)
+7017447 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.select - <==      Total: 1
+7017466 [http-nio-9999-exec-10] DEBUG c.p.mapper.AnswerMapper.select - ==>  Preparing: select * from Answer where postId = 97 
+7017466 [http-nio-9999-exec-10] DEBUG c.p.mapper.AnswerMapper.select - ==> Parameters: 
+7017472 [http-nio-9999-exec-10] DEBUG c.p.mapper.AnswerMapper.select - <==      Total: 0
+7023583 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.delete - ==>  Preparing: delete from Question where postId = ? 
+7023583 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.delete - ==> Parameters: 97(Integer)
+7023590 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.delete - <==    Updates: 1
+7023601 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+7023601 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+7023657 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+7023704 [http-nio-9999-exec-8] DEBUG c.p.m.Q.selectByUserName - ==>  Preparing: select * from Question where writer = ? 
+7023704 [http-nio-9999-exec-8] DEBUG c.p.m.Q.selectByUserName - ==> Parameters: 나윤주먹밥(String)
+7023712 [http-nio-9999-exec-8] DEBUG c.p.m.Q.selectByUserName - <==      Total: 3
+7037063 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+7037063 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+7037069 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+7132929 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+7132929 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+7132935 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+7135661 [http-nio-9999-exec-6] DEBUG c.p.m.Q.selectByUserName - ==>  Preparing: select * from Question where writer = ? 
+7135661 [http-nio-9999-exec-6] DEBUG c.p.m.Q.selectByUserName - ==> Parameters: 나윤주먹밥(String)
+7135668 [http-nio-9999-exec-6] DEBUG c.p.m.Q.selectByUserName - <==      Total: 3
+7137740 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+7137741 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+7137753 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+7297119 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+7297119 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+7297125 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+7409959 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+7409960 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+7409971 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+7465184 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+7465184 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+7465190 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+7526691 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+7526691 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+7526700 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+7764309 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+7764309 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+7764315 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+7765745 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+7765745 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+7765752 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+7779849 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+7779850 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+7779855 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+7781169 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+7781169 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+7781184 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+7928453 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+7928453 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+7928460 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+8255858 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8255859 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8255874 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+8255905 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8255905 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8255912 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+8468130 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8468130 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8468137 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+8471711 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8471711 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8471717 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+8476994 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8476994 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8476999 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+8486966 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8486966 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8486974 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+8583509 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8583509 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8583515 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+8608157 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+8608157 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+8608162 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+857  [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 1516 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+860  [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+861  [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+5222 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 4.878 seconds (JVM running for 8.183)
+5225 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+9232249 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+9232265 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+9232303 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+9257403 [http-nio-9999-exec-4] DEBUG c.p.m.Q.selectByUserName - ==>  Preparing: select * from Question where writer = ? 
+9257404 [http-nio-9999-exec-4] DEBUG c.p.m.Q.selectByUserName - ==> Parameters: 나윤주먹밥(String)
+9257419 [http-nio-9999-exec-4] DEBUG c.p.m.Q.selectByUserName - <==      Total: 3
+9259063 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+9259063 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+9259082 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+9272258 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+9272259 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+9272281 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+9280853 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+9280854 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+9280879 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+9283942 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+9283942 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+9283950 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+9295057 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+9295057 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+9295070 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+9314479 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+9314479 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+9314496 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+9739738 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+9739739 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+9739745 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+9739751 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+9739752 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+9739758 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+9739766 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+9739766 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+9739772 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+9739796 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+9739796 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+9739803 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+9739953 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+9739953 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+9739960 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+9740096 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+9740097 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+9740102 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+9740188 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+9740188 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+9740804 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+9764686 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+9764687 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+9764695 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+9775560 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+9775561 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+9775566 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+9796524 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+9796524 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+9796530 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+10735851 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+10735851 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+10735858 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+10746689 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+10746690 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+10746698 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+10747394 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+10747394 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+10747401 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+10752623 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+10752623 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+10752631 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+10753738 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+10753739 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+10753745 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+10765401 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+10765402 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+10765409 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+10767712 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+10767712 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+10767720 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+10805297 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+10805297 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+10805312 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+10833539 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+10833540 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+10833546 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+10856897 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+10856897 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+10856906 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+10858981 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+10858981 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+10858988 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+10923329 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+10923330 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+10923339 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+10924104 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+10924104 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+10924113 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+10983009 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+10983009 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+10983017 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+10984316 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+10984316 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+10984324 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+11030037 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+11030037 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+11030047 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+11032482 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+11032482 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+11032491 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+11059553 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+11059554 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+11059562 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+11060260 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+11060260 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+11060267 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+11122170 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+11122170 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+11122182 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+11123608 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+11123608 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+11123618 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+11149081 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+11149082 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+11149089 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+11154988 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+11154988 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+11154996 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+11155729 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+11155729 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+11155737 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+11265702 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+11265702 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+11265711 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+11267206 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+11267206 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+11267214 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+11297746 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+11297746 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+11297754 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+11299674 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+11299674 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+11299680 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 10
+11477367 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+11477367 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+11477381 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 35
+11600226 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+11600226 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+11600235 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 35
+11610346 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+11610346 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+11610355 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 35
+11694705 [http-nio-9999-exec-5] DEBUG c.p.m.Q.selectByUserName - ==>  Preparing: select * from Question where writer = ? 
+11694706 [http-nio-9999-exec-5] DEBUG c.p.m.Q.selectByUserName - ==> Parameters: 나윤주먹밥(String)
+11694727 [http-nio-9999-exec-5] DEBUG c.p.m.Q.selectByUserName - <==      Total: 28
+11700561 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+11700562 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+11700569 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 35
+11702765 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+11702765 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+11702772 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 35
+1081 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 4052 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+1084 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+1085 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+5195 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 4.766 seconds (JVM running for 6.048)
+5197 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+10890 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select state, territory, title, writer, date from Question 
+10907 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+10933 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 35
+191545 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select state, territory, title, writer, date from Question 
+191545 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+191554 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 35
+198089 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select state, territory, title, writer, date from Question 
+198089 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+198102 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 35
+227659 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select state, territory, title, writer, date from Question 
+227659 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+227667 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 35
+245474 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select state, territory, title, writer, date from Question 
+245474 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+245481 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 35
+280118 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select state, territory, title, writer, date from Question 
+280118 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+280125 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 35
+297027 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select state, territory, title, writer, date from Question 
+297028 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+297039 [http-nio-9999-exec-8] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 35
+325995 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select state, territory, title, writer, date from Question 
+325995 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+326002 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 35
+327933 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select state, territory, title, writer, date from Question 
+327933 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+327943 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 35
+398986 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select state, territory, title, writer, date from Question 
+398986 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+398993 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 35
+412609 [restartedMain] INFO  com.plateer.BoardBootApplication - Starting BoardBootApplication on DESKTOP-2TTF77C with PID 4052 (C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot\target\classes started by notebiz in C:\Users\notebiz\Desktop\git\shoppingmall_board\shoppingmall_board-boot)
+412609 [restartedMain] DEBUG com.plateer.BoardBootApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.4.RELEASE
+412609 [restartedMain] INFO  com.plateer.BoardBootApplication - No active profile set, falling back to default profiles: default
+413611 [restartedMain] INFO  com.plateer.BoardBootApplication - Started BoardBootApplication in 1.069 seconds (JVM running for 414.464)
+413613 [restartedMain] ERROR com.plateer.BoardBootApplication - plateer mall starting...
+424409 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+424413 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+424433 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 35
+447295 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+447295 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+447306 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 35
+449056 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+449056 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+449064 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 35
+1589962 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+1589963 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+1589972 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 35
+1610930 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+1610930 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+1610938 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 35
+1906291 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+1906292 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+1906302 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 35
+1906993 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+1906993 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+1907002 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 35
+1909231 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+1909231 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+1909241 [http-nio-9999-exec-2] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 35
+1911902 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+1911902 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+1911929 [http-nio-9999-exec-3] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 35
+3730569 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3730578 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3730599 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 35
+3750508 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3750508 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3750517 [http-nio-9999-exec-9] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 35
+3752607 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3752607 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3752618 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 35
+3793958 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3793958 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3793966 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 35
+3794776 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3794776 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3794783 [http-nio-9999-exec-5] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 35
+3804889 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3804889 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3804898 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 35
+3817741 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3817741 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3817750 [http-nio-9999-exec-10] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 35
+3866145 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3866146 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3866153 [http-nio-9999-exec-1] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 35
+3907095 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3907095 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3907107 [http-nio-9999-exec-4] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 35
+3908797 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3908797 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3908805 [http-nio-9999-exec-6] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 35
+3915640 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==>  Preparing: select * from Question 
+3915641 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - ==> Parameters: 
+3915653 [http-nio-9999-exec-7] DEBUG c.p.mapper.QuestionMapper.selectAll - <==      Total: 35
