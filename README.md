@@ -1,4 +1,4 @@
-# shoppingmall_board README
+# plateermall_board
 
 
 ## usecase diagram
