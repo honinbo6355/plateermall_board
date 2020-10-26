@@ -1,7 +1,12 @@
 # plateermall_board
 플래티어 신입사원 교육때 진행한 프로젝트입니다. Q&A API 기능을 가진 모듈입니다.
 
-<br>
+<br />
+
+## swagger url
+https://shoppingmall-board.herokuapp.com
+
+<br />
 
 ## usecase diagram
 ![usecase-diagram](./Readme_img/shoppingmall_board_usecasediagram.png)
